@@ -1,8 +1,8 @@
 require "rexpense/exception"
 
 module Rexpense
-  class RequestTimeout < Exception; end
-  class RequestError < Exception; end
+  class RequestTimeout < RuntimeError; end
+  class RequestError < RuntimeError; end
 
   class Response < SimpleDelegator
     def resolve!
