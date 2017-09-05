@@ -5,8 +5,8 @@ module Rexpense
     #
     class ExpenseCollection < Collection
       def build_collection
-        response.parsed_body.each do |attributes|
-          collection.push(Rexpense::Entities::Expense.new(attributes['expenses']))
+        response.parsed_body['expenses'].each do |attributes|
+          collection.push(Rexpense::Entities::Expense.new(attributes))
         end
       end
     end

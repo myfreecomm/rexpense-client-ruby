@@ -16,21 +16,20 @@ module Rexpense
     end
 
     def parsed_body(key = nil)
-      return body_json[key] unless key.nil?
-      body_json
-    rescue MultiJson::ParseError
+      return JSON.parse(body)[key] unless key.nil?
+      JSON.parse(body)
+    rescue JSON::ParserError
       {}
     end
 
     private
 
     def error!
-      error = RequestError.new(
+      raise RequestError.new(
         code:    code,
         message: request_error_message,
         body:    parsed_body
       )
-      raise error
     end
 
     def request_error_message
@@ -39,10 +38,6 @@ module Rexpense
       else
         parsed_body["error"] || ""
       end
-    end
-
-    def body_json
-      MultiJson.load(body)
     end
   end
 end

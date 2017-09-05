@@ -5,7 +5,7 @@ describe Rexpense::Http do
 
   describe '#get' do
     let(:http_method) { :get }
-    let(:url) { '/api/v1/organizations' }
+    let(:url) { '/api/v1/organizations/68/tags' }
     let(:params) { {} }
 
     it_behaves_like 'available http request methods'
@@ -13,23 +13,23 @@ describe Rexpense::Http do
 
   describe '#post' do
     let(:http_method) { :post }
-    let(:url) { '/api/v1/expenses' }
-    let(:params) { { entity: { name: 'Second entity' } } }
+    let(:url) { '/api/v1/organizations/68/tags' }
+    let(:params) { { name: 'Rexpense gem client' } }
 
     it_behaves_like 'available http request methods'
   end
 
   describe '#put' do
     let(:http_method) { :put }
-    let(:url) { '/api/v1/expenses/948' }
-    let(:params) { { entity: { name: 'Second updated entity' } } }
+    let(:url) { '/api/v1/organizations/68/tags/172' }
+    let(:params) { { name: 'Rexpense gem client 02' } }
 
     it_behaves_like 'available http request methods'
   end
 
   describe '#delete' do
     let(:http_method) { :delete }
-    let(:url) { '/api/v1/expenses/247' }
+    let(:url) { '/api/v1/organizations/68/tags/114' }
     let(:params) { {} }
 
     it_behaves_like 'available http request methods'

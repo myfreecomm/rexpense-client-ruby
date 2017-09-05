@@ -41,7 +41,7 @@ module Rexpense
 
     def body
       body = args[:body]
-      body = MultiJson.dump(body) if body.is_a?(Hash) && !args[:multipart]
+      body = JSON.dump(body) if body.is_a?(Hash) && !args[:multipart]
       body
     end
 

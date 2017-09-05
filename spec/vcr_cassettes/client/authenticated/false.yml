@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 01 Sep 2017 20:02:53 GMT
+      - Tue, 05 Sep 2017 14:12:16 GMT
       Connection:
       - keep-alive
       Www-Authenticate:
@@ -33,9 +33,9 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - e330a391-e4dd-4bd1-abff-6bb7e52b8d52
+      - a761312e-125a-48cb-88b1-dce564743fdb
       X-Runtime:
-      - '0.011899'
+      - '0.008528'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       Clear-Site-Data:
@@ -96,5 +96,5 @@ http_interactions:
     http_version: '1.1'
     adapter_metadata:
       effective_url: https://sandbox.rexpense.com/api/v1/organizations
-  recorded_at: Fri, 01 Sep 2017 20:02:54 GMT
+  recorded_at: Tue, 05 Sep 2017 14:12:17 GMT
 recorded_with: VCR 2.9.3

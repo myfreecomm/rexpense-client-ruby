@@ -15,5 +15,9 @@ module Rexpense
       raise e unless [401, 403].include?(e.code)
       false
     end
+
+    def expenses
+      Rexpense::Resources::Expense.new(http)
+    end
   end
 end

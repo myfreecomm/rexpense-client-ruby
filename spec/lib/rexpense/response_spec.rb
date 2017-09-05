@@ -83,7 +83,7 @@ describe Rexpense::Response do
     context "when JSON is valid" do
       it "returns empty hash" do
         allow(subject).to receive(:body).and_return("{\"key\": \"value\"}")
-        expect(MultiJson).to receive(:load).with("{\"key\": \"value\"}").and_call_original
+        expect(JSON).to receive(:parse).with("{\"key\": \"value\"}").and_call_original
         expect(subject.parsed_body).to eq({ "key" => "value" })
       end
     end

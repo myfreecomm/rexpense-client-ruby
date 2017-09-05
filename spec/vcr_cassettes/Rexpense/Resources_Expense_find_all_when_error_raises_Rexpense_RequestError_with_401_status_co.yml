@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: delete
-    uri: https://sandbox.rexpense.com/api/v1/organizations/68/tags/114
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/expenses
     body:
-      encoding: UTF-8
-      string: "{}"
+      encoding: US-ASCII
+      string: ''
     headers:
       User-Agent:
       - Rexpense Ruby Client v1.0.0
@@ -14,28 +14,28 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+      - Basic Olg=
   response:
     status:
-      code: 204
-      message: No Content
+      code: 401
+      message: Unauthorized
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 05 Sep 2017 14:11:51 GMT
-      Content-Length:
-      - '0'
+      - Tue, 05 Sep 2017 14:28:26 GMT
       Connection:
       - keep-alive
+      Www-Authenticate:
+      - Basic realm="Rexpense API"
+      Content-Type:
+      - text/html; charset=utf-8
       Cache-Control:
       - no-cache
-      Set-Cookie:
-      - request_method=DELETE; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - 6e064427-678d-4b79-bbba-1377efff17b6
+      - d542e7aa-4c15-47d3-86d5-04163c319ae6
       X-Runtime:
-      - '0.038047'
+      - '0.008915'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       Clear-Site-Data:
@@ -84,13 +84,17 @@ http_interactions:
       - none
       X-Xss-Protection:
       - '1'
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: ''
+      string: 'HTTP Basic: Access denied.
+
+'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/68/tags/114
-  recorded_at: Tue, 05 Sep 2017 14:11:51 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses
+  recorded_at: Tue, 05 Sep 2017 14:28:26 GMT
 recorded_with: VCR 2.9.3

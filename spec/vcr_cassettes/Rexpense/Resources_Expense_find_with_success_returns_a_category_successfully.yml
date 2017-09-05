@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/expenses/949
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 05 Sep 2017 14:55:12 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0bb48e834924df22e280ed75bc5c7c73"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bb2ed0e4-37c6-470c-b8d9-4a8d18b41335
+      X-Runtime:
+      - '0.469394'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6OTQ5LCJkZXNjcmlwdGlvbiI6IlRlc3RlIHRyYWNraW5nICIsImFt
+        b3VudCI6MC4wMSwic3RhdHVzIjoiYXdhaXRpbmdfYW5hbHlzaXMiLCJvY2N1
+        cnJlZF9hdCI6IjIwMTctMDgtMzBUMDA6MDA6MDBaIiwicGF5ZXIiOnsiaWQi
+        OjIzLCJuYW1lIjoiTmV4YWFzIiwidHlwZSI6Ik9yZ2FuaXphdGlvbiIsImxv
+        Z28iOlt7InN0eWxlIjoib3JpZ2luYWwiLCJ1cmwiOiJodHRwczovL3MzLmFt
+        YXpvbmF3cy5jb20vcmV4cGVuc2Utc2FuZGJveC11cGxvYWRzL29yZ2FuaXph
+        dGlvbl9waWN0dXJlcy8xMC8zNWNhYTM4YmU1MmI2OGUzM2I2MjQwOGRkMzQw
+        NzU1NjA4ZGFkMWU5L29yaWdpbmFsL25leGFhcy1hdmF0YXIucG5nIiwid2lk
+        dGgiOjIwMCwiaGVpZ2h0IjoyMDAsImV4cGlyYXRpb24iOiIyMDE3LTA5LTA1
+        VDE1OjU1OjEyWiJ9LHsic3R5bGUiOiJtZWRpdW0iLCJ1cmwiOiJodHRwczov
+        L3MzLmFtYXpvbmF3cy5jb20vcmV4cGVuc2Utc2FuZGJveC11cGxvYWRzL29y
+        Z2FuaXphdGlvbl9waWN0dXJlcy8xMC81NmFmZDI4NDdlMjAwNzliYTMzNTRm
+        MTc3YjlkNGFlYmE4M2ViMzJkL21lZGl1bS9uZXhhYXMtYXZhdGFyLnBuZyIs
+        IndpZHRoIjoyMDAsImhlaWdodCI6MjAwLCJleHBpcmF0aW9uIjoiMjAxNy0w
+        OS0wNVQxNTo1NToxMloifSx7InN0eWxlIjoidGh1bWIiLCJ1cmwiOiJodHRw
+        czovL3MzLmFtYXpvbmF3cy5jb20vcmV4cGVuc2Utc2FuZGJveC11cGxvYWRz
+        L29yZ2FuaXphdGlvbl9waWN0dXJlcy8xMC8yZmY5MDdhNzA3NWNmZWE5MTNj
+        MjhhNzM1OGZiMzM3ODE3NWRjOTIxL3RodW1iL25leGFhcy1hdmF0YXIucG5n
+        Iiwid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDAsImV4cGlyYXRpb24iOiIyMDE3
+        LTA5LTA1VDE1OjU1OjEyWiJ9LHsic3R5bGUiOiJ0aW55IiwidXJsIjoiaHR0
+        cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNhbmRib3gtdXBsb2Fk
+        cy9vcmdhbml6YXRpb25fcGljdHVyZXMvMTAvZjdhMmE2Mzc5NzE4ODU1Y2Yx
+        OTk0ZWQ1NDhhOGU4MGVkOGQwNTkyMy90aW55L25leGFhcy1hdmF0YXIucG5n
+        Iiwid2lkdGgiOjQ4LCJoZWlnaHQiOjQ4LCJleHBpcmF0aW9uIjoiMjAxNy0w
+        OS0wNVQxNTo1NToxMloifV19LCJyZWNlaXZlciI6eyJpZCI6NjMsIm5hbWUi
+        OiJMdWl6IEFsZWdyaWEiLCJ0eXBlIjoiVXNlciIsImF2YXRhciI6W3sic3R5
+        bGUiOiJvcmlnaW5hbCIsInVybCI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNv
+        bS9yZXhwZW5zZS1zYW5kYm94LXVwbG9hZHMvdXNlcl9waWN0dXJlcy8yOS8y
+        MjdlZWEwOWJlMDBkZmY2MTI1ODAxNWIzNWJhYTM4Zjc2NmViOTM0L29yaWdp
+        bmFsLzIwMTYxMTA0XzE1MDczMS5wbmciLCJ3aWR0aCI6MTAyNCwiaGVpZ2h0
+        IjoxMDI0LCJleHBpcmF0aW9uIjoiMjAxNy0wOS0wNVQxNTo1NToxMloifSx7
+        InN0eWxlIjoibWVkaXVtIiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3Mu
+        Y29tL3JleHBlbnNlLXNhbmRib3gtdXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI5
+        LzI2ZDNiNmFlNjFhMjNjMjI3MmNhZThkYTljODcyODVhMGZjNzM0NDQvbWVk
+        aXVtLzIwMTYxMTA0XzE1MDczMS5wbmciLCJ3aWR0aCI6MzAwLCJoZWlnaHQi
+        OjMwMCwiZXhwaXJhdGlvbiI6IjIwMTctMDktMDVUMTU6NTU6MTJaIn0seyJz
+        dHlsZSI6InRodW1iIiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29t
+        L3JleHBlbnNlLXNhbmRib3gtdXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI5LzJi
+        MGRlYTIzODYyMmM3MjM4OWVmNWJiNmRiZjEzMzBmZjdlMWExNmIvdGh1bWIv
+        MjAxNjExMDRfMTUwNzMxLnBuZyIsIndpZHRoIjoxMDAsImhlaWdodCI6MTAw
+        LCJleHBpcmF0aW9uIjoiMjAxNy0wOS0wNVQxNTo1NToxMloifSx7InN0eWxl
+        IjoidGlueSIsInVybCI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9yZXhw
+        ZW5zZS1zYW5kYm94LXVwbG9hZHMvdXNlcl9waWN0dXJlcy8yOS9hNTBmZjhl
+        YjBmNDVjOTRjNzcxNDk1YzlkODNlZjY3OGE4OTQ1MWViL3RpbnkvMjAxNjEx
+        MDRfMTUwNzMxLnBuZyIsIndpZHRoIjo0OCwiaGVpZ2h0Ijo0OCwiZXhwaXJh
+        dGlvbiI6IjIwMTctMDktMDVUMTU6NTU6MTJaIn1dLCJkZWZhdWx0X2F2YXRh
+        ciI6ZmFsc2V9LCJhdHRhY2htZW50cyI6W10sInRhZ3MiOltdLCJjdXJyZW5j
+        eSI6IkJSTCIsImxhdGl0dWRlIjpudWxsLCJsb25naXR1ZGUiOm51bGwsImxv
+        Y2F0aW9uIjpudWxsLCJhdHRhY2htZW50c19jb3VudCI6MCwiY29tbWVudHNf
+        Y291bnQiOjAsImFjdGl2aXRpZXNfY291bnQiOjEsImxpcXVpZGF0ZV90aHJv
+        dWdoX2FkdmFuY2VtZW50IjpmYWxzZSwia2luZCI6ImRpc3RhbmNlIiwicHJl
+        X2V4cGVuc2VfaWQiOm51bGwsImRpc3RhbmNlIjowLjAyLCJkaXN0YW5jZV9r
+        aW5kIjoia20iLCJvcmlnaW4iOiJSLiBNYW5vZWwgZGEgU2lsdmEsIDExMzgg
+        LSBOw7pjbGVvIEVsZG9yYWRvLCBCYXVydSAtIFNQLCAxNzAyNC03ODAsIEJy
+        YXNpbCIsIm9yaWdpbl9sYXRpdHVkZSI6LTIyLjMwMjM4OTIsIm9yaWdpbl9s
+        b25naXR1ZGUiOi00OS4wNTY0MjIsImRlc3RpbmF0aW9uIjoiUi4gTHXDrXMg
+        Q2FycmVyLCAxOTkgLSBOw7pjbGVvIEVsZG9yYWRvLCBCYXVydSAtIFNQLCBC
+        cmFzaWwiLCJkZXN0aW5hdGlvbl9sYXRpdHVkZSI6LTIyLjMwMjYyOTUsImRl
+        c3RpbmF0aW9uX2xvbmdpdHVkZSI6LTQ5LjA1NjA4NDEsInRyYXZlbF90aW1l
+        IjowLCJfbGlua3MiOlt7InJlbCI6InNlbGYiLCJtZXRob2QiOiJHRVQiLCJo
+        cmVmIjoiaHR0cHM6Ly9zYW5kYm94LnJleHBlbnNlLmNvbS9hcGkvdjEvZXhw
+        ZW5zZXMvOTQ5In0seyJyZWwiOiJkZXN0cm95IiwibWV0aG9kIjoiREVMRVRF
+        IiwiaHJlZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5jb20vYXBpL3Yx
+        L2V4cGVuc2VzLzk0OSJ9LHsicmVsIjoidXBkYXRlIiwibWV0aG9kIjoiUFVU
+        IiwiaHJlZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5jb20vYXBpL3Yx
+        L2V4cGVuc2VzLzk0OSJ9LHsicmVsIjoicGF0Y2giLCJtZXRob2QiOiJQQVRD
+        SCIsImhyZWYiOiJodHRwczovL3NhbmRib3gucmV4cGVuc2UuY29tL2FwaS92
+        MS9leHBlbnNlcy85NDkifSx7InJlbCI6ImFjdGl2aXRpZXMiLCJtZXRob2Qi
+        OiJHRVQiLCJocmVmIjoiaHR0cHM6Ly9zYW5kYm94LnJleHBlbnNlLmNvbS9h
+        cGkvdjEvZXhwZW5zZXMvOTQ5L2FjdGl2aXRpZXMifV19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/949
+  recorded_at: Tue, 05 Sep 2017 14:55:12 GMT
+recorded_with: VCR 2.9.3

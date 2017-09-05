@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://sandbox.rexpense.com/api/v1/organizations/68/tags
+    uri: https://sandbox.rexpense.com/api/v1/expenses
     body:
       encoding: UTF-8
-      string: '{"name":"Rexpense gem client"}'
+      string: "{}"
     headers:
       User-Agent:
       - Rexpense Ruby Client v1.0.0
@@ -17,27 +17,25 @@ http_interactions:
       - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
   response:
     status:
-      code: 201
-      message: Created
+      code: 422
+      message: Unprocessable Entity
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 05 Sep 2017 14:09:45 GMT
+      - Tue, 05 Sep 2017 17:49:36 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
-      Etag:
-      - W/"86b0fbb90fd41e696ba6357bc8172766"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       Set-Cookie:
       - request_method=POST; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - c580365b-0dde-4222-a0b2-427e253be218
+      - 8304f323-a5b1-4530-9cb8-dc7a222233e8
       X-Runtime:
-      - '0.023838'
+      - '0.031427'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       X-Xss-Protection:
@@ -47,10 +45,13 @@ http_interactions:
       Via:
       - 1.1 vegur
     body:
-      encoding: UTF-8
-      string: '{"id":176,"name":"Rexpense gem client","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/68/tags/176"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/68/tags/176"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/68/tags/176"}]}'
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOnsicGF5ZXIiOlsibsOjbyBwb2RlIGZpY2FyIGVtIGJyYW5j
+        byJdLCJvY2N1cnJlZF9hdCI6WyJuw6NvIHBvZGUgZmljYXIgZW0gYnJhbmNv
+        Il0sImFtb3VudCI6WyJuw6NvIHBvZGUgZmljYXIgZW0gYnJhbmNvIl19fQ==
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/68/tags
-  recorded_at: Tue, 05 Sep 2017 14:09:46 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses
+  recorded_at: Tue, 05 Sep 2017 17:49:37 GMT
 recorded_with: VCR 2.9.3

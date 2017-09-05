@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: delete
-    uri: https://sandbox.rexpense.com/api/v1/organizations/68/tags/114
+    uri: https://sandbox.rexpense.com/api/v1/expenses/949
     body:
       encoding: UTF-8
       string: "{}"
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 05 Sep 2017 14:11:51 GMT
+      - Tue, 05 Sep 2017 17:55:49 GMT
       Content-Length:
       - '0'
       Connection:
@@ -33,9 +33,9 @@ http_interactions:
       Set-Cookie:
       - request_method=DELETE; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - 6e064427-678d-4b79-bbba-1377efff17b6
+      - 7dfbf803-f8a1-43c7-b122-11433c78cc2a
       X-Runtime:
-      - '0.038047'
+      - '0.401005'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       Clear-Site-Data:
@@ -91,6 +91,6 @@ http_interactions:
       string: ''
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/68/tags/114
-  recorded_at: Tue, 05 Sep 2017 14:11:51 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/949
+  recorded_at: Tue, 05 Sep 2017 17:55:50 GMT
 recorded_with: VCR 2.9.3

@@ -1,5 +1,5 @@
-shared_examples :entity_collection do |entity_type|
-  let(:params) { double(headers: {}, parsed_body: [{}]) }
+shared_examples :entity_collection do |entity_type, key|
+  let(:params) { double(headers: {}, parsed_body: { key => [] }) }
 
   subject { described_class.new(params) }
 
@@ -10,9 +10,7 @@ shared_examples :entity_collection do |entity_type|
   end
 
   context "#collection" do
-    before :each do
-      subject.build
-    end
+    before { subject.build }
 
     it "returns items(#{entity_type})" do
       expect(subject.collection).to all(be_a(entity_type))

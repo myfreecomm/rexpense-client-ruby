@@ -1,5 +1,4 @@
 require "typhoeus"
-require "multi_json"
 require "mime/types"
 require "require_all"
 
