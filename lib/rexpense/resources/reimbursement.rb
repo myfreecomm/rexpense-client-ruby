@@ -1,0 +1,18 @@
+module Rexpense
+  module Resources
+    #
+    # A wrapper to Rexpense reimbursements API
+    #
+    # [API]
+    #   Documentation: http://developers.rexpense.com/api/v1/reimbursements/
+    #
+    class Reimbursement < ResourceBase
+
+      private
+
+      def endpoint_base
+        "/api/v1/reimbursements"
+      end
+    end
+  end
+end

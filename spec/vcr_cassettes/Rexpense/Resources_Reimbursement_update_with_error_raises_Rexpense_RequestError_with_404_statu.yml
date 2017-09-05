@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://sandbox.rexpense.com/api/v1/reimbursements/88888888
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 05 Sep 2017 20:01:02 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=PATCH; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 8f1e03f8-c781-40f5-b992-cbeff3d7ef2b
+      X-Runtime:
+      - '0.034276'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOnsibWVzc2FnZSI6IlJlY3Vyc28gbsOjbyBlbmNvbnRyYWRv
+        LiJ9fQ==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/reimbursements/88888888
+  recorded_at: Tue, 05 Sep 2017 20:01:02 GMT
+recorded_with: VCR 2.9.3

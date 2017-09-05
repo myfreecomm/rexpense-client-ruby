@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/reimbursements?q[currency_in][]=USD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 05 Sep 2017 19:47:03 GMT
+      Connection:
+      - keep-alive
+      Links:
+      - 'Link: <https://sandbox.rexpense.com/api/v1/reimbursements?page=1&per_page=30>;
+        rel="last"'
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a2af4a365cc99c8651fb666a580f1d53"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0d001344-1575-49a9-8e55-0eeb5aa2c65b
+      X-Runtime:
+      - '0.291539'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZWltYnVyc2VtZW50cyI6W3siaWQiOjUxLCJkZXNjcmlwdGlvbiI6InJl
+        ZW1ib2xzbyBwYXJhIHRlc3RlIGRlIG1vZWRhIiwiYW1vdW50IjoyNTAuMCwi
+        ZGF0ZSI6IjIwMTYtMDctMThUMDM6MDA6MDBaIiwidGFncyI6WyJhbG1vw6dv
+        IiwidGFnMiJdLCJjdXJyZW5jeSI6IlVTRCIsImFjdGl2aXRpZXNfY291bnQi
+        OjEsImNvbW1lbnRzX2NvdW50IjowLCJjcmVhdGVkX2F0IjoiMjAxNi0wNy0x
+        OFQxOTo1Nzo0OVoiLCJ1cGRhdGVkX2F0IjoiMjAxNi0wNy0xOFQxOTo1Nzo1
+        MFoiLCJwYXllciI6eyJpZCI6MzUsIm5hbWUiOiJBIFNvbmcgb2YgSWNlIGFu
+        ZCBGaXJlIiwidHlwZSI6Ik9yZ2FuaXphdGlvbiIsImxvZ28iOlt7InN0eWxl
+        Ijoib3JpZ2luYWwiLCJ1cmwiOiJodHRwczovL3MzLmFtYXpvbmF3cy5jb20v
+        cmV4cGVuc2Utc2FuZGJveC11cGxvYWRzL29yZ2FuaXphdGlvbl9waWN0dXJl
+        cy8xNi9jMThmYjFkMTAwMjUyNzEyMzY2M2RlYzUzYTAxMWZkOWFkYjlmZjgx
+        L29yaWdpbmFsL0ZvbGRlci5qcGciLCJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIw
+        MCwiZXhwaXJhdGlvbiI6IjIwMTctMDktMDVUMjA6NDc6MDRaIn0seyJzdHls
+        ZSI6Im1lZGl1bSIsInVybCI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9y
+        ZXhwZW5zZS1zYW5kYm94LXVwbG9hZHMvb3JnYW5pemF0aW9uX3BpY3R1cmVz
+        LzE2LzBkNTM1YmYzMWVhNmVjNjk1ZGQxMzNlYWI2OGQyZmYxMzkxMmRiZDUv
+        bWVkaXVtL0ZvbGRlci5qcGciLCJ3aWR0aCI6MjAwLCJoZWlnaHQiOjIwMCwi
+        ZXhwaXJhdGlvbiI6IjIwMTctMDktMDVUMjA6NDc6MDRaIn0seyJzdHlsZSI6
+        InRodW1iIiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBl
+        bnNlLXNhbmRib3gtdXBsb2Fkcy9vcmdhbml6YXRpb25fcGljdHVyZXMvMTYv
+        MDRiYTYwYTA4MjI0NjJjMmI3OTVhOWRkZWEzNjY3NTkxOTdkMjVmNy90aHVt
+        Yi9Gb2xkZXIuanBnIiwid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDAsImV4cGly
+        YXRpb24iOiIyMDE3LTA5LTA1VDIwOjQ3OjA0WiJ9LHsic3R5bGUiOiJ0aW55
+        IiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNh
+        bmRib3gtdXBsb2Fkcy9vcmdhbml6YXRpb25fcGljdHVyZXMvMTYvY2Y2NDU2
+        ZDQxYmYzNTQ5M2VjN2Q0ZGQ5YjQ5MjhkNzM2OTc1NDU0Mi90aW55L0ZvbGRl
+        ci5qcGciLCJ3aWR0aCI6NDgsImhlaWdodCI6NDgsImV4cGlyYXRpb24iOiIy
+        MDE3LTA5LTA1VDIwOjQ3OjA0WiJ9XX0sInJlY2VpdmVyIjp7ImlkIjo5LCJu
+        YW1lIjoiQWxleGFuZHJlIFNpbHZhIiwidHlwZSI6IlVzZXIiLCJhdmF0YXIi
+        Olt7InN0eWxlIjoib3JpZ2luYWwiLCJ1cmwiOiJodHRwczovL3MzLmFtYXpv
+        bmF3cy5jb20vcmV4cGVuc2Utc2FuZGJveC11cGxvYWRzL3VzZXJfcGljdHVy
+        ZXMvMjUvMTMzZDQwNGYzNWU5Yjc5MDIyZWU1ZTU3MDc3OWFiODg4NzRkZTI5
+        My9vcmlnaW5hbC9teV9hdmF0YXIyLnBuZyIsIndpZHRoIjoxODAsImhlaWdo
+        dCI6MTgwLCJleHBpcmF0aW9uIjoiMjAxNy0wOS0wNVQyMDo0NzowNFoifSx7
+        InN0eWxlIjoibWVkaXVtIiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3Mu
+        Y29tL3JleHBlbnNlLXNhbmRib3gtdXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI1
+        L2ExNzczMGFhZTI4OTkzYjZlNTRlNGU5YTM0MGI5MTAyYmNmM2U3NWYvbWVk
+        aXVtL215X2F2YXRhcjIucG5nIiwid2lkdGgiOjE4MCwiaGVpZ2h0IjoxODAs
+        ImV4cGlyYXRpb24iOiIyMDE3LTA5LTA1VDIwOjQ3OjA0WiJ9LHsic3R5bGUi
+        OiJ0aHVtYiIsInVybCI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9yZXhw
+        ZW5zZS1zYW5kYm94LXVwbG9hZHMvdXNlcl9waWN0dXJlcy8yNS81ZjY2MzAw
+        YWJjZmQ3ZThjOWU4NjRjZWM3OGNjNWE5NzY4NWFiZWIzL3RodW1iL215X2F2
+        YXRhcjIucG5nIiwid2lkdGgiOjEwMCwiaGVpZ2h0IjoxMDAsImV4cGlyYXRp
+        b24iOiIyMDE3LTA5LTA1VDIwOjQ3OjA0WiJ9LHsic3R5bGUiOiJ0aW55Iiwi
+        dXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNhbmRi
+        b3gtdXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI1Lzc4YmM3NDQyYjIzNjdlMDUy
+        ZjVjNGJiZDFhNDkwYjhlMjc3M2I4MTIvdGlueS9teV9hdmF0YXIyLnBuZyIs
+        IndpZHRoIjo0OCwiaGVpZ2h0Ijo0OCwiZXhwaXJhdGlvbiI6IjIwMTctMDkt
+        MDVUMjA6NDc6MDRaIn1dLCJkZWZhdWx0X2F2YXRhciI6ZmFsc2V9LCJyZXNw
+        b25zaWJsZV91c2VyIjp7ImlkIjo5LCJuYW1lIjoiQWxleGFuZHJlIFNpbHZh
+        IiwidHlwZSI6IlVzZXIiLCJhdmF0YXIiOlt7InN0eWxlIjoib3JpZ2luYWwi
+        LCJ1cmwiOiJodHRwczovL3MzLmFtYXpvbmF3cy5jb20vcmV4cGVuc2Utc2Fu
+        ZGJveC11cGxvYWRzL3VzZXJfcGljdHVyZXMvMjUvMTMzZDQwNGYzNWU5Yjc5
+        MDIyZWU1ZTU3MDc3OWFiODg4NzRkZTI5My9vcmlnaW5hbC9teV9hdmF0YXIy
+        LnBuZyIsIndpZHRoIjoxODAsImhlaWdodCI6MTgwLCJleHBpcmF0aW9uIjoi
+        MjAxNy0wOS0wNVQyMDo0NzowNFoifSx7InN0eWxlIjoibWVkaXVtIiwidXJs
+        IjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNhbmRib3gt
+        dXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI1L2ExNzczMGFhZTI4OTkzYjZlNTRl
+        NGU5YTM0MGI5MTAyYmNmM2U3NWYvbWVkaXVtL215X2F2YXRhcjIucG5nIiwi
+        d2lkdGgiOjE4MCwiaGVpZ2h0IjoxODAsImV4cGlyYXRpb24iOiIyMDE3LTA5
+        LTA1VDIwOjQ3OjA0WiJ9LHsic3R5bGUiOiJ0aHVtYiIsInVybCI6Imh0dHBz
+        Oi8vczMuYW1hem9uYXdzLmNvbS9yZXhwZW5zZS1zYW5kYm94LXVwbG9hZHMv
+        dXNlcl9waWN0dXJlcy8yNS81ZjY2MzAwYWJjZmQ3ZThjOWU4NjRjZWM3OGNj
+        NWE5NzY4NWFiZWIzL3RodW1iL215X2F2YXRhcjIucG5nIiwid2lkdGgiOjEw
+        MCwiaGVpZ2h0IjoxMDAsImV4cGlyYXRpb24iOiIyMDE3LTA5LTA1VDIwOjQ3
+        OjA0WiJ9LHsic3R5bGUiOiJ0aW55IiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6
+        b25hd3MuY29tL3JleHBlbnNlLXNhbmRib3gtdXBsb2Fkcy91c2VyX3BpY3R1
+        cmVzLzI1Lzc4YmM3NDQyYjIzNjdlMDUyZjVjNGJiZDFhNDkwYjhlMjc3M2I4
+        MTIvdGlueS9teV9hdmF0YXIyLnBuZyIsIndpZHRoIjo0OCwiaGVpZ2h0Ijo0
+        OCwiZXhwaXJhdGlvbiI6IjIwMTctMDktMDVUMjA6NDc6MDRaIn1dLCJkZWZh
+        dWx0X2F2YXRhciI6ZmFsc2V9LCJleHBlbnNlcyI6W10sIl9saW5rcyI6W3si
+        cmVsIjoic2VsZiIsIm1ldGhvZCI6IkdFVCIsImhyZWYiOiJodHRwczovL3Nh
+        bmRib3gucmV4cGVuc2UuY29tL2FwaS92MS9yZWltYnVyc2VtZW50cy81MSJ9
+        LHsicmVsIjoiZGVzdHJveSIsIm1ldGhvZCI6IkRFTEVURSIsImhyZWYiOiJo
+        dHRwczovL3NhbmRib3gucmV4cGVuc2UuY29tL2FwaS92MS9yZWltYnVyc2Vt
+        ZW50cy81MSJ9LHsicmVsIjoidXBkYXRlIiwibWV0aG9kIjoiUFVUIiwiaHJl
+        ZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5jb20vYXBpL3YxL3JlaW1i
+        dXJzZW1lbnRzLzUxIn0seyJyZWwiOiJwYXJ0aWFsX3VwZGF0ZSIsIm1ldGhv
+        ZCI6IlBBVENIIiwiaHJlZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5j
+        b20vYXBpL3YxL3JlaW1idXJzZW1lbnRzLzUxIn1dfV0sImNvdW50IjoxLCJj
+        dXJyZW50X3BhZ2UiOjEsInRvdGFsX3BhZ2VzIjoxfQ==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/reimbursements?q[currency_in][]=USD
+  recorded_at: Tue, 05 Sep 2017 19:47:04 GMT
+recorded_with: VCR 2.9.3

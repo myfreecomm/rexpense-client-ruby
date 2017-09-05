@@ -23,5 +23,9 @@ module Rexpense
     def advancements
       Rexpense::Resources::Advancement.new(http)
     end
+
+    def reimbursements
+      Rexpense::Resources::Reimbursement.new(http)
+    end
   end
 end

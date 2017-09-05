@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: patch
+    uri: https://sandbox.rexpense.com/api/v1/reimbursements/78
+    body:
+      encoding: UTF-8
+      string: '{"description":"something from nothing"}'
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 05 Sep 2017 20:00:35 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dd2eec2b5d124670deef68e0521ee777"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - request_method=PATCH; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 393980db-2778-400b-a0a9-96ba770af408
+      X-Runtime:
+      - '0.713087'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":78,"description":"something from nothing","amount":10.0,"date":"2014-10-16T03:00:00Z","tags":[],"currency":"BRL","activities_count":1,"comments_count":0,"created_at":"2017-09-05T19:58:42Z","updated_at":"2017-09-05T20:00:34Z","payer":{"id":16,"name":"Wonderland
+        Ltda","type":"Organization","logo":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/0ff8b300a3284a03055ca49da119074f23f97ddd/original/3t8pyv.jpg","width":625,"height":475,"expiration":"2017-09-05T21:00:35Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/72925645de021a5d132494f9adb90800111299c8/medium/3t8pyv.jpg","width":300,"height":228,"expiration":"2017-09-05T21:00:35Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/68621a8ea5ec837cfe35fefba13248c890418e03/thumb/3t8pyv.jpg","width":100,"height":76,"expiration":"2017-09-05T21:00:35Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/57cec49bde21aa508b61a0032347ea4bd0c7aaba/tiny/3t8pyv.jpg","width":48,"height":36,"expiration":"2017-09-05T21:00:35Z"}]},"receiver":{"id":2,"name":"Eduardo
+        Hertz de Almeida Gomes","type":"User","avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/c3179dcc52a9b92975e216a10d6e1048c5494598/original/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":2048,"height":1860,"expiration":"2017-09-05T21:00:35Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/d1aeea6235b0761825c83bdd8866a2ef1bfed26e/medium/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":300,"height":272,"expiration":"2017-09-05T21:00:35Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/b6aed9f66239571b4f8e2c90c13ad7de45bc88e5/thumb/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":100,"height":91,"expiration":"2017-09-05T21:00:35Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/3f2edb830ccea022b7c7cc71bd7d5e7914c4764b/tiny/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":48,"height":44,"expiration":"2017-09-05T21:00:35Z"}],"default_avatar":false},"responsible_user":{"id":2,"name":"Eduardo
+        Hertz de Almeida Gomes","type":"User","avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/c3179dcc52a9b92975e216a10d6e1048c5494598/original/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":2048,"height":1860,"expiration":"2017-09-05T21:00:35Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/d1aeea6235b0761825c83bdd8866a2ef1bfed26e/medium/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":300,"height":272,"expiration":"2017-09-05T21:00:35Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/b6aed9f66239571b4f8e2c90c13ad7de45bc88e5/thumb/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":100,"height":91,"expiration":"2017-09-05T21:00:35Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/3f2edb830ccea022b7c7cc71bd7d5e7914c4764b/tiny/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":48,"height":44,"expiration":"2017-09-05T21:00:35Z"}],"default_avatar":false},"expenses":[{"id":241,"description":"Teste","amount":12.33,"status":"approved","occurred_at":"2014-10-16T00:00:00Z","payer":{"id":16,"name":"Wonderland
+        Ltda","type":"Organization","logo":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/0ff8b300a3284a03055ca49da119074f23f97ddd/original/3t8pyv.jpg","width":625,"height":475,"expiration":"2017-09-05T21:00:35Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/72925645de021a5d132494f9adb90800111299c8/medium/3t8pyv.jpg","width":300,"height":228,"expiration":"2017-09-05T21:00:35Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/68621a8ea5ec837cfe35fefba13248c890418e03/thumb/3t8pyv.jpg","width":100,"height":76,"expiration":"2017-09-05T21:00:35Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/1/57cec49bde21aa508b61a0032347ea4bd0c7aaba/tiny/3t8pyv.jpg","width":48,"height":36,"expiration":"2017-09-05T21:00:35Z"}]},"receiver":{"id":2,"name":"Eduardo
+        Hertz de Almeida Gomes","type":"User","avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/c3179dcc52a9b92975e216a10d6e1048c5494598/original/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":2048,"height":1860,"expiration":"2017-09-05T21:00:35Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/d1aeea6235b0761825c83bdd8866a2ef1bfed26e/medium/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":300,"height":272,"expiration":"2017-09-05T21:00:35Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/b6aed9f66239571b4f8e2c90c13ad7de45bc88e5/thumb/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":100,"height":91,"expiration":"2017-09-05T21:00:35Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/3f2edb830ccea022b7c7cc71bd7d5e7914c4764b/tiny/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":48,"height":44,"expiration":"2017-09-05T21:00:35Z"}],"default_avatar":false},"attachments":[],"tags":[],"currency":"BRL","latitude":null,"longitude":null,"location":"","attachments_count":0,"comments_count":1,"activities_count":6,"liquidate_through_advancement":false,"kind":"monetary","pre_expense_id":null,"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/expenses/241"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/expenses/241"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/expenses/241"},{"rel":"patch","method":"PATCH","href":"https://sandbox.rexpense.com/api/v1/expenses/241"},{"rel":"activities","method":"GET","href":"https://sandbox.rexpense.com/api/v1/expenses/241/activities"}],"approved_amount":10.0,"approved_amount_currency":"BRL"}],"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/reimbursements/78"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/reimbursements/78"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/reimbursements/78"},{"rel":"partial_update","method":"PATCH","href":"https://sandbox.rexpense.com/api/v1/reimbursements/78"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/reimbursements/78
+  recorded_at: Tue, 05 Sep 2017 20:00:35 GMT
+recorded_with: VCR 2.9.3
