@@ -83,6 +83,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print (~> 1.1)
+  bundler (~> 1.15)
   codeclimate-test-reporter (~> 0.4)
   pry (~> 0.9)
   pry-nav (~> 0.2)
