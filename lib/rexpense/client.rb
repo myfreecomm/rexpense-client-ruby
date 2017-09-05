@@ -19,5 +19,9 @@ module Rexpense
     def expenses
       Rexpense::Resources::Expense.new(http)
     end
+
+    def advancements
+      Rexpense::Resources::Advancement.new(http)
+    end
   end
 end

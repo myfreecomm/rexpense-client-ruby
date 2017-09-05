@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/advancements/40
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 05 Sep 2017 18:53:03 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8b3d820e18ee989a199dc3d1619331cd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3912b50e-b8be-4522-82e2-640bb8285434
+      X-Runtime:
+      - '0.092648'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":40,"description":"Adiantamento em USD","amount":200.0,"date":"2017-07-13T00:00:00Z","currency":"USD","tags":[],"activities_count":1,"comments_count":0,"payer":{"id":35,"name":"A
+        Song of Ice and Fire","type":"Organization","logo":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/c18fb1d1002527123663dec53a011fd9adb9ff81/original/Folder.jpg","width":200,"height":200,"expiration":"2017-09-05T19:53:03Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/0d535bf31ea6ec695dd133eab68d2ff13912dbd5/medium/Folder.jpg","width":200,"height":200,"expiration":"2017-09-05T19:53:03Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/04ba60a0822462c2b795a9ddea366759197d25f7/thumb/Folder.jpg","width":100,"height":100,"expiration":"2017-09-05T19:53:03Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/cf6456d41bf35493ec7d4dd9b4928d7369754542/tiny/Folder.jpg","width":48,"height":48,"expiration":"2017-09-05T19:53:03Z"}]},"receiver":{"id":6,"name":"Alexandre
+        S Silva","type":"User","avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/8a661422ca480880d10c27c1b97058139c8fe314/original/20161118_161821.png","width":1024,"height":1024,"expiration":"2017-09-05T19:53:03Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/12864c835a2737c6bb6312d95aad41d03462e1fa/medium/20161118_161821.png","width":300,"height":300,"expiration":"2017-09-05T19:53:03Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/99ba0043562faa4c0086f9ca92dff67f9029d9af/thumb/20161118_161821.png","width":100,"height":100,"expiration":"2017-09-05T19:53:03Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/8df032e9b77fa74f702a74499a15750f1797beec/tiny/20161118_161821.png","width":48,"height":48,"expiration":"2017-09-05T19:53:03Z"}],"default_avatar":false},"responsible_user":{"id":9,"name":"Alexandre
+        Silva","type":"User","avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/133d404f35e9b79022ee5e570779ab88874de293/original/my_avatar2.png","width":180,"height":180,"expiration":"2017-09-05T19:53:03Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/a17730aae28993b6e54e4e9a340b9102bcf3e75f/medium/my_avatar2.png","width":180,"height":180,"expiration":"2017-09-05T19:53:03Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/5f66300abcfd7e8c9e864cec78cc5a97685abeb3/thumb/my_avatar2.png","width":100,"height":100,"expiration":"2017-09-05T19:53:03Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/78bc7442b2367e052f5c4bbd1a490b8e2773b812/tiny/my_avatar2.png","width":48,"height":48,"expiration":"2017-09-05T19:53:03Z"}],"default_avatar":false},"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/advancements/40"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/advancements/40"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/advancements/40"},{"rel":"partial_update","method":"PATCH","href":"https://sandbox.rexpense.com/api/v1/advancements/40"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/advancements/40
+  recorded_at: Tue, 05 Sep 2017 18:53:03 GMT
+recorded_with: VCR 2.9.3
