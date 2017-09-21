@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://sandbox.rexpense.com/api/v1/pre_expenses/4/restore
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 21 Sep 2017 13:46:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a1460f9bc124186185b4c5806401077a"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 4a37b00d-af42-43b0-a548-65c540c6bb79
+      X-Runtime:
+      - '0.170147'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":4,"description":"","amount":{"fractional":"900.0","currency":{"id":"brl","alternate_symbols":null,"decimal_mark":",","disambiguate_symbol":null,"html_entity":"R$","iso_code":"BRL","iso_numeric":"986","name":"Brazilian
+        Real","priority":100,"smallest_denomination":5,"subunit":"Centavo","subunit_to_unit":100,"symbol":"R$","symbol_first":true,"thousands_separator":"."},"bank":{"store":{"index":{},"options":{},"mutex":{},"in_transaction":false},"rounding_method":null}},"currency":"USD","tags":["uber"],"converted_at":null,"deleted_at":null,"ignored_at":null,"extra_information":{"receipt_detail":{"total_charged":9.0,"duration":"00:11:32","currency_code":"USD","distance":"1.87","distance_label":"miles"}},"occurred_at":"2017-01-16T00:00:00Z","integration":{"id":14,"type":"UberIntegration"}}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/pre_expenses/4/restore
+  recorded_at: Thu, 21 Sep 2017 13:51:09 GMT
+recorded_with: VCR 2.9.3

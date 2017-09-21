@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://sandbox.rexpense.com/api/v1/pre_expenses/88888888
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 21 Sep 2017 13:25:10 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=DELETE; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - c92c6909-01d0-449c-97ce-af17ac9022fe
+      X-Runtime:
+      - '0.125055'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOnsibWVzc2FnZSI6IlJlY3Vyc28gbsOjbyBlbmNvbnRyYWRv
+        LiJ9fQ==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/pre_expenses/88888888
+  recorded_at: Thu, 21 Sep 2017 13:29:53 GMT
+recorded_with: VCR 2.9.3

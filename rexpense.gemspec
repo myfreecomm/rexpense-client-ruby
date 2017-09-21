@@ -5,8 +5,9 @@ require "rexpense/version"
 Gem::Specification.new do |spec|
   spec.name                 = "rexpense"
   spec.version              = Rexpense::VERSION
-  spec.authors              = ["Eduardo Hertz"]
+  spec.authors              = ["Eduardo Hertz", "Dante Alighieri"]
   spec.email                = [
+    "dante.alighierimds@gmail.com",
     "eduardohertz@gmail.com",
   ]
   spec.required_ruby_version = ">= 2.0.0"

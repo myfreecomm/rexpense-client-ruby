@@ -2,7 +2,7 @@ module Rexpense
   module Entities
     class Expense < Base
       [:id, :attachments_count, :comments_count, :activities_count,
-        :travel_time].each { |n| attribute n, Integer }
+        :travel_time, :pre_expense_id].each { |n| attribute n, Integer }
 
       [:description, :currency, :approved_amount_currency, :kind, :status,
         :distance_kind, :destination, :origin].each { |n| attribute n, String }
