@@ -7,6 +7,8 @@ module Rexpense
       attribute :tags, Array[String]
       attribute :created_at, DateTime
       attribute :updated_at, DateTime
+      attribute :payer, Rexpense::Entities::Organization
+      attribute :receiver, Rexpense::Entities::User
     end
   end
 end

@@ -12,6 +12,8 @@ module Rexpense
         :origin_latitude].each { |n| attribute n, Decimal }
 
       attribute :tags, Array[String]
+      attribute :payer, Rexpense::Entities::Organization
+      attribute :receiver, Rexpense::Entities::User
       attribute :liquidate_through_advancement, Boolean
       attribute :created_at, DateTime
       attribute :updated_at, DateTime

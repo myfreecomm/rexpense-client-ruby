@@ -5,6 +5,6 @@ describe Rexpense::Entities::PreExpense do
 
   it_behaves_like "entity_attributes", [
     :id, :amount, :description, :currency, :created_at, :converted_at, :updated_at,
-    :ignored_at, :occurred_at, :tags
+    :ignored_at, :occurred_at, :tags, :payer, :receiver
   ]
 end

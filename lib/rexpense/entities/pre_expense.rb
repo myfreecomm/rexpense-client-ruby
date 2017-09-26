@@ -10,6 +10,8 @@ module Rexpense
        :ignored_at, :occurred_at].each { |n| attribute n, String }
 
       attribute :tags, Array[String]
+      attribute :payer, Rexpense::Entities::Organization
+      attribute :receiver, Rexpense::Entities::User
     end
   end
 end

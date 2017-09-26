@@ -5,6 +5,6 @@ describe Rexpense::Entities::Advancement do
 
   it_behaves_like "entity_attributes", [
     :id, :comments_count, :activities_count, :description, :currency,
-    :amount, :tags, :created_at, :updated_at
+    :amount, :tags, :created_at, :updated_at, :payer, :receiver
   ]
 end
