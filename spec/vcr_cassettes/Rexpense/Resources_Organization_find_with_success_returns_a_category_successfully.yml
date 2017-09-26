@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 26 Sep 2017 17:08:42 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"88258e3bc1c2882f8a42d64d9bfe57a0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 36c48c9a-db2f-4f55-8236-07da8dc6a13a
+      X-Runtime:
+      - '0.035294'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":35,"name":"A Song of Ice and Fire","created_at":"2015-02-06T13:54:25Z","updated_at":"2016-01-27T14:34:16Z","members_count":11,"restricted_tags":true,"expired":false,"logo":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/c18fb1d1002527123663dec53a011fd9adb9ff81/original/Folder.jpg","width":200,"height":200,"expiration":"2017-09-26T18:08:43Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/0d535bf31ea6ec695dd133eab68d2ff13912dbd5/medium/Folder.jpg","width":200,"height":200,"expiration":"2017-09-26T18:08:43Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/04ba60a0822462c2b795a9ddea366759197d25f7/thumb/Folder.jpg","width":100,"height":100,"expiration":"2017-09-26T18:08:43Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/cf6456d41bf35493ec7d4dd9b4928d7369754542/tiny/Folder.jpg","width":48,"height":48,"expiration":"2017-09-26T18:08:43Z"}],"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"partial_update","method":"PATCH","href":"https://sandbox.rexpense.com/api/v1/organizations/35"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35
+  recorded_at: Tue, 26 Sep 2017 17:13:42 GMT
+recorded_with: VCR 2.9.3

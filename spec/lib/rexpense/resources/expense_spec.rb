@@ -13,17 +13,6 @@ describe Rexpense::Resources::Expense, vcr: true do
       end
     end
 
-    it "find expenses by attributes" do
-      params = { kind_in: ["distance"] }
-      result = client.expenses.find_all(params)
-
-      expect(result).to be_a(Rexpense::Entities::ExpenseCollection)
-      expect(result.collection[0]).to be_a(expense_klass)
-      expect(result.collection[0].kind).to eq("distance")
-      expect(result.collection[1].kind).to eq("distance")
-      expect(result.collection[2].kind).to eq("distance")
-    end
-
     context "when error" do
       let(:client) { Rexpense.client("") }
 

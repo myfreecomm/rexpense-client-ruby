@@ -1,7 +1,7 @@
 module Rexpense
   module Entities
     #
-    # A wrapper to Expense collection
+    # A wrapper to PreExpense collection
     #
     class PreExpenseCollection < Collection
       def build_collection

@@ -16,6 +16,10 @@ module Rexpense
       false
     end
 
+    def organizations
+      Rexpense::Resources::Organization.new(http)
+    end
+
     def pre_expenses
       Rexpense::Resources::PreExpense.new(http)
     end
