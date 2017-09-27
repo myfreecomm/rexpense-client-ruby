@@ -33,7 +33,8 @@ Use `Rexpense.configure` to setup your environment:
 require 'rexpense'
 
 Rexpense.configure do |config|
-  config.url = 'https://sandbox.rexpense.com' # defaults to 'https://app.rexpense.com'
+  config.api_mode = 'production' # To set the rexpense application that will use
+  config.version = 'v1' # Current API version
   config.user_agent = 'My App v1.0' # optional, but you should pass a custom user-agent identifying your app
 end
 ```
@@ -49,8 +50,15 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
 ##### Now you have access to these API endpoints:
 
 
-### Endpoints
+### Available Endpoints
 
+- Advancements
+- Advancement Devolutions
+- Expenses
+- Organizations
+- PreExpenses
+- Tags
+- Webhooks
 
 ## Development
 
