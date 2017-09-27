@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/integrations/webhooks/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 27 Sep 2017 20:18:11 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a5d7c1b41264e1871472449a2a900aff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b3d1c57a-84e5-46d4-8426-35079f653048
+      X-Runtime:
+      - '0.026400'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":2,"url":"http://requestb.in/tinvmlti","description":"","secret":"217a049ae5b4123e87de56c7f75c84be","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35/integrations/webhooks/2"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35/integrations/webhooks/2"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35/integrations/webhooks/2"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/integrations/webhooks/2
+  recorded_at: Wed, 27 Sep 2017 20:23:14 GMT
+recorded_with: VCR 2.9.3
