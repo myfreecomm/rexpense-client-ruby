@@ -53,12 +53,62 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
 ### Available Endpoints
 
 - Advancements
+```ruby
+  client.advancements.find_all
+  client.advancements.find
+  client.advancements.create
+  client.advancements.update
+  client.advancements.destroy
+```
+
 - Advancement Devolutions
+```ruby
+  client.advancement_devolutions.create
+```
+
 - Expenses
+```ruby
+  client.expenses.find_all
+  client.expenses.find(:expense_id)
+  client.expenses.create(params)
+  client.expenses.update(:expense_id, params)
+  client.expenses.destroy(:expense_id)
+```
+
 - Organizations
+```ruby
+  client.organizations.find_all
+  client.organizations.find(:organization_id)
+  client.organizations.update(:organization_id, params)
+  client.organizations.destroy(:organization_id)
+```
+
 - PreExpenses
+```ruby
+  client.pre_expenses.find_all
+  client.pre_expenses.find(:pre_expense_id)
+  client.pre_expenses.ignore(:pre_expense_id)
+  client.pre_expenses.restore(:pre_expense_id)
+  client.pre_expenses.convert(:pre_expense_id, params)
+```
+
 - Tags
+```ruby
+  client.tags.find_all(:organization_id)
+  client.tags.find(:organization_id, :tag_id)
+  client.tags.create(:organization_id, params)
+  client.tags.update(:organization_id, :tag_id, params)
+  client.tags.destroy(:organization_id, :tag_id)
+```
+
 - Webhooks
+```ruby
+  client.webhooks.find_all(:organization_id)
+  client.webhooks.find(:organization_id, :webhook_id)
+  client.webhooks.create(:organization_id, params)
+  client.webhooks.update(:organization_id, :webhook_id, params)
+  client.webhooks.destroy(:organization_id, :webhook_id)
+```
 
 ## Development
 
