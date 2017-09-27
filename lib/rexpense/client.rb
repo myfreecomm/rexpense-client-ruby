@@ -40,6 +40,10 @@ module Rexpense
       Rexpense::Resources::Reimbursement.new(http)
     end
 
+    def tags
+      Rexpense::Resources::Tag.new(http)
+    end
+
     def webhooks
       Rexpense::Resources::Webhook.new(http)
     end

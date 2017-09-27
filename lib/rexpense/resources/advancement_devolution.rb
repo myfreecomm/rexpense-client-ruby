@@ -6,7 +6,25 @@ module Rexpense
     # [API]
     #   Documentation: http://developers.rexpense.com/api/v1/advancement_devolutions/
     #
-    class AdvancementDevolution < ResourceBase
+    class AdvancementDevolution < Base
+
+      #
+      # Create a resource
+      #
+      # [API]
+      #   Method: <tt>POST /api/v1/expenses</tt>
+      #   Method: <tt>POST /api/v1/advancements</tt>
+      #   Method: <tt>POST /api/v1/reimbursements</tt>
+      #
+      #   Documentation: http://developers.rexpense.com/api/v1/expenses/#create
+      #   Documentation: http://developers.rexpense.com/api/v1/advancements/#create
+      #   Documentation: http://developers.rexpense.com/api/v1/reimbursements/#create
+      #
+      def create(params)
+        http.post("#{endpoint_base}", body: params) do |response|
+          respond_with_object response
+        end
+      end
 
       private
 

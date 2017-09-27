@@ -1,11 +1,11 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags
+    method: put
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
     body:
       encoding: UTF-8
-      string: '{"name":"teste gem"}'
+      string: '{"name":"updated tag"}'
     headers:
       User-Agent:
       - Rexpense Ruby Client v1.0.0
@@ -17,27 +17,27 @@ http_interactions:
       - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
   response:
     status:
-      code: 201
-      message: Created
+      code: 200
+      message: OK
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 27 Sep 2017 11:20:59 GMT
+      - Wed, 27 Sep 2017 20:08:33 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"1dce7b106705421439f1b95f696e01f5"
+      - W/"b752b458a4b46e22465b9f2d938c5962"
       Cache-Control:
       - max-age=0, private, must-revalidate
       Set-Cookie:
-      - request_method=POST; path=/; secure; HttpOnly; SameSite=Lax
+      - request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - b2b5e3fe-c50e-4ba9-b6a5-d492f7dc500b
+      - 75dfa29d-e723-4445-a05f-b5a5a3bb3791
       X-Runtime:
-      - '0.059212'
+      - '0.056032'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       X-Xss-Protection:
@@ -48,9 +48,9 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"id":187,"name":"teste gem","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/187"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/187"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/187"}]}'
+      string: '{"id":64,"name":"updated tag","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"}]}'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags
-  recorded_at: Wed, 27 Sep 2017 11:26:01 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
+  recorded_at: Wed, 27 Sep 2017 20:13:36 GMT
 recorded_with: VCR 2.9.3

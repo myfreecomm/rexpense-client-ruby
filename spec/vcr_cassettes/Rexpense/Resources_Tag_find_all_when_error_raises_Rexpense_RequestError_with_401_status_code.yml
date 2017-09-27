@@ -1,8 +1,8 @@
 ---
 http_interactions:
 - request:
-    method: delete
-    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/93
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags
     body:
       encoding: US-ASCII
       string: ''
@@ -14,28 +14,28 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+      - Basic Olg=
   response:
     status:
-      code: 204
-      message: No Content
+      code: 401
+      message: Unauthorized
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 27 Sep 2017 15:13:14 GMT
-      Content-Length:
-      - '0'
+      - Wed, 27 Sep 2017 20:08:32 GMT
       Connection:
       - keep-alive
+      Www-Authenticate:
+      - Basic realm="Rexpense API"
+      Content-Type:
+      - text/html; charset=utf-8
       Cache-Control:
       - no-cache
-      Set-Cookie:
-      - request_method=DELETE; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - 77473684-28cd-4030-8a9a-8b6c8c4c1917
+      - 1dc1e48a-652d-46ea-8928-b52e65190971
       X-Runtime:
-      - '0.065714'
+      - '0.013111'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       Content-Security-Policy:
@@ -82,13 +82,17 @@ http_interactions:
       - none
       X-Xss-Protection:
       - '1'
+      Transfer-Encoding:
+      - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: ''
+      string: 'HTTP Basic: Access denied.
+
+'
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/93
-  recorded_at: Wed, 27 Sep 2017 15:18:17 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags
+  recorded_at: Wed, 27 Sep 2017 20:13:34 GMT
 recorded_with: VCR 2.9.3

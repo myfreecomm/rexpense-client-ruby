@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: put
-    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/88888888
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
     body:
       encoding: UTF-8
-      string: "{}"
+      string: '{"name":""}'
     headers:
       User-Agent:
       - Rexpense Ruby Client v1.0.0
@@ -17,13 +17,13 @@ http_interactions:
       - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 422
+      message: Unprocessable Entity
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 27 Sep 2017 11:21:07 GMT
+      - Wed, 27 Sep 2017 20:08:33 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -33,9 +33,9 @@ http_interactions:
       Set-Cookie:
       - request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax
       X-Request-Id:
-      - 92346d2c-50f5-49bd-b02c-60a88b016e29
+      - 39adf732-9f92-49ae-8ecc-c87f8aef1801
       X-Runtime:
-      - '0.036127'
+      - '0.140938'
       Strict-Transport-Security:
       - max-age=631152000; includeSubdomains
       X-Xss-Protection:
@@ -47,10 +47,10 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJlcnJvcnMiOnsibWVzc2FnZSI6IlJlY3Vyc28gbsOjbyBlbmNvbnRyYWRv
-        LiJ9fQ==
+        eyJlcnJvcnMiOnsibmFtZSI6WyJuw6NvIHBvZGUgZmljYXIgZW0gYnJhbmNv
+        Il19fQ==
     http_version: '1.1'
     adapter_metadata:
-      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/88888888
-  recorded_at: Wed, 27 Sep 2017 11:26:09 GMT
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
+  recorded_at: Wed, 27 Sep 2017 20:13:36 GMT
 recorded_with: VCR 2.9.3
