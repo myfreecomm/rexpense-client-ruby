@@ -42,7 +42,7 @@ module Rexpense
       #   Documentation: http://developers.rexpense.com/api/v1/pre_expenses/#convert
       def convert(id, params={})
         http.post("#{endpoint_base}/#{id}/convert", body: params) do |response|
-          Rexpense::Entities::Expense.new response.parsed_body(nil)
+          Rexpense::Entities::Expense.new response.parsed_body
         end
       end
 
