@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.rexpense.com/api/v1/advancement_devolutions
+    body:
+      encoding: UTF-8
+      string: "{}"
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 27 Sep 2017 16:57:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=POST; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - a1622bf5-cb48-4656-8d3d-0f7d32ad5bc2
+      X-Runtime:
+      - '0.250625'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvcnMiOnsicGF5ZXIiOlsibsOjbyBwb2RlIGZpY2FyIGVtIGJyYW5j
+        byJdLCJjdXJyZW5jeSI6WyJuw6NvIGVzdMOhIGluY2x1w61kbyBuYSBsaXN0
+        YSJdLCJhbW91bnQiOlsibsOjbyDDqSB1bSBuw7ptZXJvIl19fQ==
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/advancement_devolutions
+  recorded_at: Wed, 27 Sep 2017 17:02:34 GMT
+recorded_with: VCR 2.9.3

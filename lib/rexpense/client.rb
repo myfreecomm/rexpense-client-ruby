@@ -32,8 +32,16 @@ module Rexpense
       Rexpense::Resources::Advancement.new(http)
     end
 
+    def advancement_devolutions
+      Rexpense::Resources::AdvancementDevolution.new(http)
+    end
+
     def reimbursements
       Rexpense::Resources::Reimbursement.new(http)
+    end
+
+    def webhooks
+      Rexpense::Resources::Webhook.new(http)
     end
   end
 end
