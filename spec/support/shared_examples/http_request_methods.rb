@@ -5,7 +5,7 @@ shared_examples "available http request methods" do
         body: params,
         method: http_method,
         token: "8cd049b4afca9213fb2455528394ab2fb0bc34f5c905f33c",
-        url: "#{Rexpense.configuration.url}#{url}",
+        url: "https://sandbox.rexpense.com/api/v1#{url}",
         user_agent: "Rexpense Ruby Client v#{Rexpense::VERSION}"
       ).and_call_original
       subject.send(http_method, url, body: params)

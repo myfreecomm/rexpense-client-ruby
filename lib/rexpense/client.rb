@@ -10,7 +10,7 @@ module Rexpense
     end
 
     def authenticated?
-      http.get("/api/v1/organizations") { |response| response.code == 200 }
+      http.get("/organizations") { |response| response.code == 200 }
     rescue RequestError => e
       raise e unless [401, 403].include?(e.code)
       false

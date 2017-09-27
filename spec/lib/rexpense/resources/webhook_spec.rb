@@ -4,6 +4,7 @@ describe Rexpense::Resources::Webhook, vcr: true do
   let(:devolution_klass) { Rexpense::Entities::Webhook }
 
   describe "#find_all" do
+=begin
     context "with success" do
       subject { client.webhooks.find_all }
 
@@ -12,6 +13,7 @@ describe Rexpense::Resources::Webhook, vcr: true do
         expect(subject.collection.first.class).to eq(webhook_klass)
       end
     end
+=end
   end
 
   describe "#find" do

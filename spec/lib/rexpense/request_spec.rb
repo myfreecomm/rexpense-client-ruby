@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe Rexpense::Request do
   describe "#run" do
-    subject { described_class.new({ method: 'post', params: {}, url: Rexpense.configuration.url, user_agent: 'My Test User-Agent', token: 'my-auth-hash' }) }
+    subject { described_class.new({ method: 'post', params: {}, url: 'https://sandbox.rexpense.com', user_agent: 'My Test User-Agent', token: 'my-auth-hash' }) }
 
     it "does a request using Typhoeus::Request" do
       expect(Typhoeus::Request).to receive(:new).with("https://sandbox.rexpense.com", { method: "post", params: {}, headers: { "Accept" => "application/json", "Content-Type" => "application/json", "User-Agent" => "My Test User-Agent", "Authorization" => "Basic bXktYXV0aC1oYXNoOlg=" }, accept_encoding: "gzip", params_encoding: :rack }).and_return(double(run: true, response: true))

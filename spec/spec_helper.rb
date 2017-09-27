@@ -32,7 +32,7 @@ RSpec.configure do |config|
   config.mock_with :rspec
 
   config.before(:each) do
-    Rexpense.configuration.url = "https://sandbox.rexpense.com"
+    Rexpense.configuration.api_mode = "sandbox"
     Typhoeus::Expectation.clear
   end
 end

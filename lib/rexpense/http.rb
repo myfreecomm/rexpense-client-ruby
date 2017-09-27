@@ -3,10 +3,14 @@ require "rexpense/response"
 
 module Rexpense
   class Http
-    attr_reader :token
+    attr_reader :token, :base_url
+
+    SANDBOX_URL = "https://sandbox.rexpense.com/api"
+    PRODUCTION_URL = "https://app.rexpense.com/api"
 
     def initialize(token)
       @token = token
+      @base_url = api_url + "/#{Rexpense.configuration.version}"
     end
 
     %w[get post delete put patch].each do |m|
@@ -17,12 +21,17 @@ module Rexpense
 
     private
 
+    def api_url
+      return PRODUCTION_URL if Rexpense.configuration.api_mode == 'production'
+      SANDBOX_URL
+    end
+
     def send_request(method, path, options, &block)
       request = Request.new(
         options.merge!(
           method: method,
           token: token,
-          url: "#{Rexpense.configuration.url}#{path}",
+          url: "#{base_url}#{path}",
           user_agent: Rexpense.configuration.user_agent
         )
       )

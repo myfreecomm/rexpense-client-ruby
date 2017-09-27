@@ -49,7 +49,7 @@ module Rexpense
       private
 
       def endpoint_base
-        "/api/v1/pre_expenses"
+        "/pre_expenses"
       end
     end
   end

@@ -75,7 +75,7 @@ module Rexpense
       private
 
       def endpoint_base
-        "/api/v1/organizations"
+        "/organizations"
       end
     end
   end
