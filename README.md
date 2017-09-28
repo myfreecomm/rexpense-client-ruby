@@ -52,19 +52,24 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
 
 ### Available Endpoints
 
-- Participants
+- [Advancement Participants](http://developers.rexpense.com/api/v1/advancement_participants/)
 ```ruby
   client.advancements.participants(:advancement_id)
   client.advancements.leave_participant(:advancement_id)
-
+```
+- [Reimbursement Participants](http://developers.rexpense.com/api/v1/reimbursement_participants/)
+```ruby
   client.reimbursements.participants(:reimbursement_id)
   client.reimbursements.leave_participant(:reimbursement_id)
+```
 
+- [Expense Participants](http://developers.rexpense.com/api/v1/expense_participants/)
+```ruby
   client.expenses.participants(:expense_id)
   client.expenses.leave_participant(:expense_id)
 ```
 
-- Comments
+- [Comments](http://developers.rexpense.com/api/v1/comments/)
 ```ruby
   client.advancements.comments(:advancement_id)
   client.advancements.find_comment(:advancement_id, :comment_id)
@@ -85,26 +90,26 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.expenses.destroy_comment(:advancement_id, :comment_id)
 ```
 
-- Activities
+- [Activities](http://developers.rexpense.com/api/v1/activities/)
 ```ruby
   client.activitites.find_all
 ```
 
-- Advancements
+- [Advancements](http://developers.rexpense.com/api/v1/advancements/)
 ```ruby
   client.advancements.find_all
-  client.advancements.find
-  client.advancements.create
-  client.advancements.update
-  client.advancements.destroy
+  client.advancements.find(:advancement_id)
+  client.advancements.create(params)
+  client.advancements.update(:advancement_id, params)
+  client.advancements.destroy(:advancement_id)
 ```
 
-- Advancement Devolutions
+- [Advancement Devolutions](http://developers.rexpense.com/api/v1/advancement_devolutions/)
 ```ruby
   client.advancement_devolutions.create
 ```
 
-- Expenses
+- [Expenses](http://developers.rexpense.com/api/v1/expenses/)
 ```ruby
   client.expenses.find_all
   client.expenses.find(:expense_id)
@@ -113,7 +118,7 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.expenses.destroy(:expense_id)
 ```
 
-- Organizations
+- [Organizations](http://developers.rexpense.com/api/v1/organizations/)
 ```ruby
   client.organizations.find_all
   client.organizations.find(:organization_id)
@@ -121,7 +126,7 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.organizations.destroy(:organization_id)
 ```
 
-- Memberships
+- [Memberships](http://developers.rexpense.com/api/v1/memberships/)
 ```ruby
   client.organizations.memberships(:organization_id)
   client.organizations.find_memberships(:organization_id, :membership_id)
@@ -130,7 +135,7 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.organizations.destroy_memberships(:organization_id, :membership_id)
 ```
 
-- PreExpenses
+- [PreExpenses](http://developers.rexpense.com/api/v1/pre_expenses/)
 ```ruby
   client.pre_expenses.find_all
   client.pre_expenses.find(:pre_expense_id)
@@ -139,7 +144,7 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.pre_expenses.convert(:pre_expense_id, params)
 ```
 
-- Tags
+- [Tags](http://developers.rexpense.com/api/v1/tags/)
 ```ruby
   client.tags.find_all(:organization_id)
   client.tags.find(:organization_id, :tag_id)
@@ -148,7 +153,7 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.tags.destroy(:organization_id, :tag_id)
 ```
 
-- Webhooks
+- [Webhooks](http://developers.rexpense.com/api/v1/webhooks/)
 ```ruby
   client.webhooks.find_all(:organization_id)
   client.webhooks.find(:organization_id, :webhook_id)
