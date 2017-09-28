@@ -16,36 +16,24 @@ module Rexpense
       false
     end
 
-    def organizations
-      Rexpense::Resources::Organization.new(http)
-    end
+    # Define available endpoints
 
-    def pre_expenses
-      Rexpense::Resources::PreExpense.new(http)
-    end
-
-    def expenses
-      Rexpense::Resources::Expense.new(http)
-    end
-
-    def advancements
-      Rexpense::Resources::Advancement.new(http)
+    def activities
+      Rexpense::Resources::Activity.new(http)
     end
 
     def advancement_devolutions
       Rexpense::Resources::AdvancementDevolution.new(http)
     end
 
-    def reimbursements
-      Rexpense::Resources::Reimbursement.new(http)
+    def pre_expenses
+      Rexpense::Resources::PreExpense.new(http)
     end
 
-    def tags
-      Rexpense::Resources::Tag.new(http)
-    end
-
-    def webhooks
-      Rexpense::Resources::Webhook.new(http)
+    %w(organization expense advancement reimbursement tag webhook membership comment).each do |endpoint|
+      define_method(endpoint + 's') do
+        Object.const_get("Rexpense::Resources::#{endpoint.capitalize}").new(http)
+      end
     end
   end
 end
