@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/expenses/974/attachments/635
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 15:53:49 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dd4d1835400fe8897e3a64f7608be3f6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0032e8a5-fe70-4d37-9108-a13f8eed9530
+      X-Runtime:
+      - '0.099664'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":635,"description":"Img teste ","uploaded_at":"2017-09-21T14:45:11Z","content_type":"image/jpeg","file_name":"RexpenseImage-1506005088713.jpg","url":"https://rexpense-sandbox-uploads.s3.amazonaws.com/attachments/635/original/RexpenseImage-1506005088713.jpg?AWSAccessKeyId=AKIAIHYUZK67P2QEO6WQ\u0026Expires=1506617630\u0026Signature=GLUm0%2FZzEpbJFrlLV%2Fz2Wq7TT%2Fg%3D","local_path":null,"user":{"id":63,"first_name":"Luiz","last_name":"Alegria","mention_name":"lhalegria","default_currency":"BRL","emails":[{"email":"luiz.alegria@nexaas.com","main":true}]},"file":[{"style":"medium","url":"https://rexpense-sandbox-uploads.s3.amazonaws.com/attachments/635/medium/RexpenseImage-1506005088713.jpg?AWSAccessKeyId=AKIAIHYUZK67P2QEO6WQ\u0026Expires=1506617630\u0026Signature=C9cu7OTi5egGbpsl4%2FlAYXBc6X8%3D","width":249,"height":300,"expiration":"2017-09-28T16:53:50Z"},{"style":"thumb","url":"https://rexpense-sandbox-uploads.s3.amazonaws.com/attachments/635/thumb/RexpenseImage-1506005088713.jpg?AWSAccessKeyId=AKIAIHYUZK67P2QEO6WQ\u0026Expires=1506617630\u0026Signature=OTyn8AxUepN5LrZuFG5ubtZqwx8%3D","width":83,"height":100,"expiration":"2017-09-28T16:53:50Z"},{"style":"tiny","url":"https://rexpense-sandbox-uploads.s3.amazonaws.com/attachments/635/tiny/RexpenseImage-1506005088713.jpg?AWSAccessKeyId=AKIAIHYUZK67P2QEO6WQ\u0026Expires=1506617630\u0026Signature=2Z7uBTekeS6aNbo%2BcHJ4U7uCtXc%3D","width":40,"height":48,"expiration":"2017-09-28T16:53:50Z"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/974/attachments/635
+  recorded_at: Thu, 28 Sep 2017 15:58:55 GMT
+recorded_with: VCR 2.9.3

@@ -7,7 +7,7 @@ module Rexpense
       attribute :mentioned_users, Array[Rexpense::Entities::User]
       attribute :user, Rexpense::Entities::User
 
-      [:created_at, :updated_at, :deleted_at].each { |n| attribute n, String }
+      [:created_at, :updated_at, :deleted_at].each { |n| attribute n, DateTime }
     end
   end
 end

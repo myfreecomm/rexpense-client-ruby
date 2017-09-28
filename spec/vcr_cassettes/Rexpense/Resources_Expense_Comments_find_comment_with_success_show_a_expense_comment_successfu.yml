@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/expenses/808/comments/654
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 16:06:00 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dd3b9472495f77f14c73c7cbb7e47ad9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c30ac905-8454-4d9d-babd-a42d80e64402
+      X-Runtime:
+      - '0.145262'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":654,"created_at":"2017-07-06T14:54:55Z","updated_at":"2017-07-06T14:54:55Z","deleted_at":null,"user":{"id":1,"first_name":"Rodrigo","last_name":"Tassinari","mention_name":"RodrigoTassinari","default_currency":"BRL","emails":[{"email":"rodrigo.tassinari@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/16/369587195f7406b894dd5ea725eb909be4a9347c/original/1","width":960,"height":1016,"expiration":"2017-09-28T17:06:00Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/16/fa42e2c1124fb6c7d0da23d7e18f0a5a15c08ad0/medium/1","width":283,"height":300,"expiration":"2017-09-28T17:06:00Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/16/664845ae13496232181b8c5ea54573eeadea387d/thumb/1","width":94,"height":100,"expiration":"2017-09-28T17:06:00Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/16/b998fae49c0d88e6841fe5401e8e4d32179eaa2e/tiny/1","width":45,"height":48,"expiration":"2017-09-28T17:06:00Z"}],"default_avatar":false},"mentioned_users":[],"content":"fooo","content_html":"fooo","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/654"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/654"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/654"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/808/comments/654
+  recorded_at: Thu, 28 Sep 2017 16:11:06 GMT
+recorded_with: VCR 2.9.3

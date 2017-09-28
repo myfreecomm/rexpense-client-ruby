@@ -194,4 +194,34 @@ describe Rexpense::Resources::Expense, vcr: true do
         end
     end
   end
+
+  context 'Attachments' do
+    let(:attachment_klass) { Rexpense::Entities::Attachment }
+
+    describe '#attachments' do
+      subject { client.expenses.attachments(974) }
+
+      it 'return expenses attachments' do
+        expect(subject.class).to eq(Rexpense::Entities::AttachmentCollection)
+        expect(subject.collection.first.class).to eq(attachment_klass)
+      end
+    end
+
+    describe '#find_attachments' do
+      subject { client.expenses.find_attachment(974, 635) }
+
+      it 'return attachment' do
+        expect(subject.class).to eq(Rexpense::Entities::Attachment)
+        expect(subject.id).to eq(635)
+      end
+    end
+
+    describe '#destroy_attachments' do
+      subject { client.expenses.destroy_attachment(974, 635) }
+
+      it 'destroy attachment' do
+        expect(subject).to be_truthy
+      end
+    end
+  end
 end
