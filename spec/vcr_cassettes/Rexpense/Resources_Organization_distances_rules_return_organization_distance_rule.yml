@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/distances_rules
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 15:29:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"a3dd2d4734242b3217c62da58190ec1f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 414a377c-1041-49f9-97e6-81cb7ae723f7
+      X-Runtime:
+      - '0.074858'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"id":3,"amount":6.0,"currency":"BRL","distance_kind":"km","organization_id":35}]'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/distances_rules
+  recorded_at: Thu, 28 Sep 2017 15:34:30 GMT
+recorded_with: VCR 2.9.3

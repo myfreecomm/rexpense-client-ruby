@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/members
+    body:
+      encoding: UTF-8
+      string: '{"user":{"email":"dante.miranda@nexaas.com"},"role":"member"}'
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 15:16:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"674e43364f44861033af9ff1a8fc0f3d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - request_method=POST; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - c1328344-4876-4c5e-85be-6c1768ba1d2a
+      X-Runtime:
+      - '0.749192'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"total_recipients":1,"not_added_recipients":[],"added_recipients":["dante.miranda@nexaas.com"],"invalid_recipients":[]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/members
+  recorded_at: Thu, 28 Sep 2017 15:21:32 GMT
+recorded_with: VCR 2.9.3
