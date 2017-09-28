@@ -52,6 +52,44 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
 
 ### Available Endpoints
 
+- Participants
+```ruby
+  client.advancements.participants(:advancement_id)
+  client.advancements.leave_participant(:advancement_id)
+
+  client.reimbursements.participants(:reimbursement_id)
+  client.reimbursements.leave_participant(:reimbursement_id)
+
+  client.expenses.participants(:expense_id)
+  client.expenses.leave_participant(:expense_id)
+```
+
+- Comments
+```ruby
+  client.advancements.comments(:advancement_id)
+  client.advancements.find_comment(:advancement_id, :comment_id)
+  client.advancements.create_comment(:advancement_id, params)
+  client.advancements.update_comment(:advancement_id, :comment_id, params)
+  client.advancements.destroy_comment(:advancement_id, :comment_id)
+
+  client.reimbursement.comments(:advancement_id)
+  client.reimbursement.find_comment(:advancement_id, :comment_id)
+  client.reimbursement.create_comment(:advancement_id, params)
+  client.reimbursement.update_comment(:advancement_id, :comment_id, params)
+  client.reimbursement.destroy_comment(:advancement_id, :comment_id)
+
+  client.expenses.comments(:advancement_id)
+  client.expenses.find_comment(:advancement_id, :comment_id)
+  client.expenses.create_comment(:advancement_id, params)
+  client.expenses.update_comment(:advancement_id, :comment_id, params)
+  client.expenses.destroy_comment(:advancement_id, :comment_id)
+```
+
+- Activities
+```ruby
+  client.activitites.find_all
+```
+
 - Advancements
 ```ruby
   client.advancements.find_all
@@ -81,6 +119,15 @@ client = Rexpense.client("YOUR_TOKEN_HERE")
   client.organizations.find(:organization_id)
   client.organizations.update(:organization_id, params)
   client.organizations.destroy(:organization_id)
+```
+
+- Memberships
+```ruby
+  client.organizations.memberships(:organization_id)
+  client.organizations.find_memberships(:organization_id, :membership_id)
+  client.organizations.create_memberships(:organization_id, params)
+  client.organizations.update_memberships(:organization_id, :membership_id, params)
+  client.organizations.destroy_memberships(:organization_id, :membership_id)
 ```
 
 - PreExpenses
