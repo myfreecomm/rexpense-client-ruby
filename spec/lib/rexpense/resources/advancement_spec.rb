@@ -126,6 +126,60 @@ describe Rexpense::Resources::Advancement, vcr: true do
   end
 
   context 'Comments' do
+    let(:comment_klass) { Rexpense::Entities::Comment }
+
+    describe '#comments' do
+      context "with success" do
+        subject { client.advancements.comments(4) }
+
+        it "show all advancement comments successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::CommentCollection)
+          expect(subject.collection.first.class).to eq(comment_klass)
+        end
+      end
+    end
+
+    describe '#find_comment' do
+      context "with success" do
+        subject { client.advancements.find_comment(4, 295) }
+
+        it "show all advancement comments successfully" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(295)
+        end
+      end
+    end
+
+    describe '#create_comment' do
+      context "with success" do
+        subject { client.advancements.create_comment(4, { content: 'Loren ipsun dollor' }) }
+
+        it "create a comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(673)
+        end
+      end
+    end
+
+    describe '#update_comment' do
+      context "with success" do
+        subject { client.advancements.update_comment(4, 673, { content: 'Foo bar' }) }
+
+        it "update comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(673)
+          expect(subject.content).to eq('Foo bar')
+        end
+      end
+    end
+
+    describe '#destroy_comment' do
+      subject { client.advancements.destroy_comment(4, 673) }
+
+      it "destroy comment" do
+        expect(subject).to be_truthy
+      end
+    end
   end
 
   context 'Participants' do

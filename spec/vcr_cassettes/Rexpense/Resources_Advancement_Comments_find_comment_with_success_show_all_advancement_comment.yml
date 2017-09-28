@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/advancements/4/comments/295
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 12:44:43 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fb06cd9589d18fae5706fc2d3827babe"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cfdbde07-a6f0-43e3-8d93-a496d5d8470b
+      X-Runtime:
+      - '0.282172'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":295,"created_at":"2015-09-09T18:58:17Z","updated_at":"2015-09-09T18:58:17Z","deleted_at":null,"user":{"id":35,"first_name":"Leonardo","last_name":"Barros","mention_name":"LeonardoBarros","default_currency":"BRL","emails":[{"email":"leonardo.barros@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/581af510e7298cb43e7877d1955ca046da9495e1/original/avatar.jpg","width":840,"height":840,"expiration":"2017-09-28T13:44:43Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/8dcc358dc82195bbcdc10eb485d737dff3c3ba1e/medium/avatar.jpg","width":300,"height":300,"expiration":"2017-09-28T13:44:43Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/436a8ce60b164cdb5bdf80b34309c14e978de00d/thumb/avatar.jpg","width":100,"height":100,"expiration":"2017-09-28T13:44:43Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/8d67706f4b527f54d25bf29e52677de2037327a5/tiny/avatar.jpg","width":48,"height":48,"expiration":"2017-09-28T13:44:43Z"}],"default_avatar":false},"mentioned_users":[],"content":"Automatic
+        test - 2015-09-09T18:58:17+0000","content_html":"Automatic test - 2015-09-09T1817+0000","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/advancements/4/comments/295"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/advancements/4/comments/295"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/advancements/4/comments/295"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/advancements/4/comments/295
+  recorded_at: Thu, 28 Sep 2017 12:49:49 GMT
+recorded_with: VCR 2.9.3
