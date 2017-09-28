@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://sandbox.rexpense.com/api/v1/expenses/940/participants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 11:08:13 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - request_method=DELETE; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 4ad0e105-156e-4684-be52-b991f997b241
+      X-Runtime:
+      - '0.203353'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Content-Security-Policy:
+      - 'default-src https: ''self''; base-uri ''self''; block-all-mixed-content;
+        child-src ''self'' *.s3.amazonaws.com; connect-src ''self'' *.s3.amazonaws.com;
+        font-src ''self'' *.rexpense.com d1of48755v9xog.cloudfront.net d37gvrvc0wt4s1.cloudfront.net
+        maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br res.cloudinary.com
+        *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com rexpense-sandbox-direct-uploads.s3.amazonaws.com
+        rexpense-sandbox-exports.s3.amazonaws.com s3.amazonaws.com *.google-analytics.com
+        cdnjs.cloudflare.com data:; form-action ''self''; frame-ancestors ''self''
+        *.s3.amazonaws.com; img-src *.rexpense.com d1of48755v9xog.cloudfront.net d37gvrvc0wt4s1.cloudfront.net
+        maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br res.cloudinary.com
+        *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com rexpense-sandbox-direct-uploads.s3.amazonaws.com
+        rexpense-sandbox-exports.s3.amazonaws.com s3.amazonaws.com *.google-analytics.com
+        cdnjs.cloudflare.com data:; media-src ''self'' *.rexpense.com d1of48755v9xog.cloudfront.net
+        d37gvrvc0wt4s1.cloudfront.net maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br
+        res.cloudinary.com *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com
+        rexpense-sandbox-direct-uploads.s3.amazonaws.com rexpense-sandbox-exports.s3.amazonaws.com
+        s3.amazonaws.com *.google-analytics.com cdnjs.cloudflare.com; object-src ''self''
+        *.rexpense.com d1of48755v9xog.cloudfront.net d37gvrvc0wt4s1.cloudfront.net
+        maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br res.cloudinary.com
+        *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com rexpense-sandbox-direct-uploads.s3.amazonaws.com
+        rexpense-sandbox-exports.s3.amazonaws.com s3.amazonaws.com *.google-analytics.com
+        cdnjs.cloudflare.com; plugin-types application/pdf application/xml text/xml;
+        script-src ''unsafe-inline'' ''unsafe-eval'' ''self'' *.rexpense.com d1of48755v9xog.cloudfront.net
+        d37gvrvc0wt4s1.cloudfront.net maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br
+        res.cloudinary.com *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com
+        rexpense-sandbox-direct-uploads.s3.amazonaws.com rexpense-sandbox-exports.s3.amazonaws.com
+        s3.amazonaws.com *.google-analytics.com cdnjs.cloudflare.com; style-src ''unsafe-inline''
+        ''self'' *.rexpense.com d1of48755v9xog.cloudfront.net d37gvrvc0wt4s1.cloudfront.net
+        maps.google.com *.googleapis.com sandbox.app.passaporteweb.com.br res.cloudinary.com
+        *.gstatic.com rexpense-sandbox-uploads.s3.amazonaws.com rexpense-sandbox-direct-uploads.s3.amazonaws.com
+        rexpense-sandbox-exports.s3.amazonaws.com s3.amazonaws.com *.google-analytics.com
+        cdnjs.cloudflare.com; upgrade-insecure-requests'
+      Referrer-Policy:
+      - origin-when-cross-origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - '1'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/940/participants
+  recorded_at: Thu, 28 Sep 2017 11:13:19 GMT
+recorded_with: VCR 2.9.3

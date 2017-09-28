@@ -124,4 +124,30 @@ describe Rexpense::Resources::Advancement, vcr: true do
       end
     end
   end
+
+  context 'Comments' do
+  end
+
+  context 'Participants' do
+    let(:user_klass) { Rexpense::Entities::User }
+
+    describe "#participants" do
+      context "with success" do
+        subject { client.advancements.participants(51) }
+
+        it "show all advancements successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::UserCollection)
+          expect(subject.collection.first.class).to eq(user_klass)
+        end
+      end
+    end
+
+    describe '#leave_participant' do
+      subject { client.advancements.leave_participant(49) }
+
+        it "show all advancements successfully" do
+          expect(subject).to be_truthy
+        end
+    end
+  end
 end

@@ -7,6 +7,8 @@ module Rexpense
     #   Documentation: http://developers.rexpense.com/api/v1/advancements/
     #
     class Advancement < ResourceBase
+      include Rexpense::Resources::Comment
+      include Rexpense::Resources::Participant
 
       private
 

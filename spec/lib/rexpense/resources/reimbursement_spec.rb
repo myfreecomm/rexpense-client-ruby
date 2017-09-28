@@ -124,4 +124,54 @@ describe Rexpense::Resources::Reimbursement, vcr: true do
       end
     end
   end
+
+  context 'Comments' do
+    let(:comment_klass) { Rexpense::Entities::Comment }
+
+    describe '#comments' do
+      context "with success" do
+        subject { client.reimbursements.comments(11) }
+
+        it "show all reimbursements successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::CommentCollection)
+          expect(subject.collection.first.class).to eq(comment_klass)
+        end
+      end
+    end
+
+    describe '#find_comment' do
+    end
+
+    describe '#create_comment' do
+    end
+
+    describe '#update_comment' do
+    end
+
+    describe '#destroy_comment' do
+    end
+  end
+
+  context 'Participants' do
+    let(:user_klass) { Rexpense::Entities::User }
+
+    describe "#participants" do
+      context "with success" do
+        subject { client.reimbursements.participants(70) }
+
+        it "show all reimbursements successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::UserCollection)
+          expect(subject.collection.first.class).to eq(user_klass)
+        end
+      end
+    end
+
+    describe '#leave_participant' do
+      subject { client.reimbursements.leave_participant(51) }
+
+        it "show all reimbursements successfully" do
+          expect(subject).to be_truthy
+        end
+    end
+  end
 end

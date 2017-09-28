@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/reimbursements/70/participants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 11:12:14 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"fef854fda6b8ae866904f7bbbab231ac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b2e63526-8af0-45b8-a63a-bf67640d7ef5
+      X-Runtime:
+      - '0.594701'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"participants":[{"id":11,"first_name":"Marcelo","last_name":"Guerra","mention_name":"MarceloGuerra","default_currency":"BRL","emails":[{"email":"marcelo.guerra@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/30/a062b291d4a43e157c1379d70586b6b306cda6ca/original/20161206_090833.png","width":1024,"height":1024,"expiration":"2017-09-28T12:12:15Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/30/04b1540910541c32c3f2ee8c986fda41ccab659c/medium/20161206_090833.png","width":300,"height":300,"expiration":"2017-09-28T12:12:15Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/30/c06131526baf97a38a5570d40106cf1b0202b37d/thumb/20161206_090833.png","width":100,"height":100,"expiration":"2017-09-28T12:12:15Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/30/3f60f491397549247e34bf5af5201a49e8a8917c/tiny/20161206_090833.png","width":48,"height":48,"expiration":"2017-09-28T12:12:15Z"}],"default_avatar":false},{"id":35,"first_name":"Leonardo","last_name":"Barros","mention_name":"LeonardoBarros","default_currency":"BRL","emails":[{"email":"leonardo.barros@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/581af510e7298cb43e7877d1955ca046da9495e1/original/avatar.jpg","width":840,"height":840,"expiration":"2017-09-28T12:12:15Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/8dcc358dc82195bbcdc10eb485d737dff3c3ba1e/medium/avatar.jpg","width":300,"height":300,"expiration":"2017-09-28T12:12:15Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/436a8ce60b164cdb5bdf80b34309c14e978de00d/thumb/avatar.jpg","width":100,"height":100,"expiration":"2017-09-28T12:12:15Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/27/8d67706f4b527f54d25bf29e52677de2037327a5/tiny/avatar.jpg","width":48,"height":48,"expiration":"2017-09-28T12:12:15Z"}],"default_avatar":false},{"id":64,"first_name":"Dante","last_name":"Miranda","mention_name":"DanteMiranda","default_currency":"BRL","emails":[{"email":"dante.miranda@nexaas.com","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/f3a7eab501d4296ab7573788495933148d753e7e/original/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/238b1f41ebdf10c2aeacfa92aea857209c823357/medium/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/c62a31737b9e2f0d0c2f14cc5449232bcfc0bd95/thumb/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/0dc1c022cde836cf4ed00692028dc49fba56641f/tiny/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null}],"default_avatar":true},{"id":9,"first_name":"Alexandre","last_name":"Silva","mention_name":"SSilvaAlexandre","default_currency":"BRL","emails":[{"email":"alexandre.silva@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/133d404f35e9b79022ee5e570779ab88874de293/original/my_avatar2.png","width":180,"height":180,"expiration":"2017-09-28T12:12:15Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/a17730aae28993b6e54e4e9a340b9102bcf3e75f/medium/my_avatar2.png","width":180,"height":180,"expiration":"2017-09-28T12:12:15Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/5f66300abcfd7e8c9e864cec78cc5a97685abeb3/thumb/my_avatar2.png","width":100,"height":100,"expiration":"2017-09-28T12:12:15Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/25/78bc7442b2367e052f5c4bbd1a490b8e2773b812/tiny/my_avatar2.png","width":48,"height":48,"expiration":"2017-09-28T12:12:15Z"}],"default_avatar":false},{"id":2,"first_name":"Eduardo","last_name":"Hertz
+        de Almeida Gomes","mention_name":"EduardoHertz","default_currency":"BRL","emails":[{"email":"eduardo.hertz@mailinator.com","main":false},{"email":"eduardo.hertz@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/c3179dcc52a9b92975e216a10d6e1048c5494598/original/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":2048,"height":1860,"expiration":"2017-09-28T12:12:15Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/d1aeea6235b0761825c83bdd8866a2ef1bfed26e/medium/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":300,"height":272,"expiration":"2017-09-28T12:12:15Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/b6aed9f66239571b4f8e2c90c13ad7de45bc88e5/thumb/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":100,"height":91,"expiration":"2017-09-28T12:12:15Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/3f2edb830ccea022b7c7cc71bd7d5e7914c4764b/tiny/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":48,"height":44,"expiration":"2017-09-28T12:12:15Z"}],"default_avatar":false},{"id":6,"first_name":"Alexandre","last_name":"S
+        Silva","mention_name":"AlexandreSilva","default_currency":"BRL","emails":[{"email":"ssilva.alexandre@gmail.com","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/8a661422ca480880d10c27c1b97058139c8fe314/original/20161118_161821.png","width":1024,"height":1024,"expiration":"2017-09-28T12:12:15Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/12864c835a2737c6bb6312d95aad41d03462e1fa/medium/20161118_161821.png","width":300,"height":300,"expiration":"2017-09-28T12:12:15Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/99ba0043562faa4c0086f9ca92dff67f9029d9af/thumb/20161118_161821.png","width":100,"height":100,"expiration":"2017-09-28T12:12:15Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/2/8df032e9b77fa74f702a74499a15750f1797beec/tiny/20161118_161821.png","width":48,"height":48,"expiration":"2017-09-28T12:12:15Z"}],"default_avatar":false}],"count":6}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/reimbursements/70/participants
+  recorded_at: Thu, 28 Sep 2017 11:17:20 GMT
+recorded_with: VCR 2.9.3

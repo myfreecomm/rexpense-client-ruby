@@ -114,4 +114,27 @@ describe Rexpense::Resources::Expense, vcr: true do
       end
     end
   end
+
+  context 'Participants' do
+    let(:user_klass) { Rexpense::Entities::User }
+
+    describe "#participants" do
+      context "with success" do
+        subject { client.expenses.participants(973) }
+
+        it "show all expenses successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::UserCollection)
+          expect(subject.collection.first.class).to eq(user_klass)
+        end
+      end
+    end
+
+    describe '#leave_participant' do
+      subject { client.expenses.leave_participant(940) }
+
+        it "show all expenses successfully" do
+          expect(subject).to be_truthy
+        end
+    end
+  end
 end
