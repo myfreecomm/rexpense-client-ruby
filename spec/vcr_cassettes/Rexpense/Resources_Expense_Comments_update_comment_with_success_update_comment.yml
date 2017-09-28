@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://sandbox.rexpense.com/api/v1/expenses/808/comments/679
+    body:
+      encoding: UTF-8
+      string: '{"content":"Foo bar"}'
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 12:54:43 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"991db49cb879369531a100431a9ce0d6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - request_method=PUT; path=/; secure; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 7aa9c3c6-7de5-4558-a451-ef572e421df8
+      X-Runtime:
+      - '2.351034'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":679,"created_at":"2017-09-28T12:53:55Z","updated_at":"2017-09-28T12:54:41Z","deleted_at":null,"user":{"id":2,"first_name":"Eduardo","last_name":"Hertz
+        de Almeida Gomes","mention_name":"EduardoHertz","default_currency":"BRL","emails":[{"email":"eduardo.hertz@mailinator.com","main":false},{"email":"eduardo.hertz@myfreecomm.com.br","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/c3179dcc52a9b92975e216a10d6e1048c5494598/original/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":2048,"height":1860,"expiration":"2017-09-28T13:54:44Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/d1aeea6235b0761825c83bdd8866a2ef1bfed26e/medium/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":300,"height":272,"expiration":"2017-09-28T13:54:44Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/b6aed9f66239571b4f8e2c90c13ad7de45bc88e5/thumb/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":100,"height":91,"expiration":"2017-09-28T13:54:44Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/user_pictures/1/3f2edb830ccea022b7c7cc71bd7d5e7914c4764b/tiny/1064521_680203731996552_612504712__C3_B3_20_C3_B4.jpg","width":48,"height":44,"expiration":"2017-09-28T13:54:44Z"}],"default_avatar":false},"mentioned_users":[],"content":"Foo
+        bar","content_html":"Foo bar","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/679"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/679"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/expenses/808/comments/679"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/expenses/808/comments/679
+  recorded_at: Thu, 28 Sep 2017 12:59:49 GMT
+recorded_with: VCR 2.9.3

@@ -115,6 +115,63 @@ describe Rexpense::Resources::Expense, vcr: true do
     end
   end
 
+  context 'Comments' do
+    let(:comment_klass) { Rexpense::Entities::Comment }
+
+    describe '#comments' do
+      context "with success" do
+        subject { client.expenses.comments(808) }
+
+        it "show all expense comments successfully" do
+          expect(subject.class).to eq(Rexpense::Entities::CommentCollection)
+          expect(subject.collection.first.class).to eq(comment_klass)
+        end
+      end
+    end
+
+    describe '#find_comment' do
+      context "with success" do
+        subject { client.expenses.find_comment(808, 654) }
+
+        it "show a expense comment successfully" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(654)
+        end
+      end
+    end
+
+    describe '#create_comment' do
+      context "with success" do
+        subject { client.expenses.create_comment(808, { content: 'Loren ipsun dollor' }) }
+
+        it "create a comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(679)
+        end
+      end
+    end
+
+    describe '#update_comment' do
+      context "with success" do
+        subject { client.expenses.update_comment(808, 679, { content: 'Foo bar' }) }
+
+        it "update comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(679)
+          expect(subject.content).to eq('Foo bar')
+        end
+      end
+    end
+
+    describe '#destroy_comment' do
+      subject { client.expenses.destroy_comment(808, 679) }
+
+      it "destroy comment" do
+        expect(subject).to be_truthy
+      end
+    end
+  end
+
   context 'Participants' do
     let(:user_klass) { Rexpense::Entities::User }
 
