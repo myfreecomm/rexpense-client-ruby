@@ -132,7 +132,7 @@ describe Rexpense::Resources::Reimbursement, vcr: true do
       context "with success" do
         subject { client.reimbursements.comments(11) }
 
-        it "show all reimbursements successfully" do
+        it "show all reimbursement successfully" do
           expect(subject.class).to eq(Rexpense::Entities::CommentCollection)
           expect(subject.collection.first.class).to eq(comment_klass)
         end
@@ -140,15 +140,45 @@ describe Rexpense::Resources::Reimbursement, vcr: true do
     end
 
     describe '#find_comment' do
+      context "with success" do
+        subject { client.reimbursements.find_comment(11, 287) }
+
+        it "show a reimbursement comment successfully" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(287)
+        end
+      end
     end
 
     describe '#create_comment' do
+      context "with success" do
+        subject { client.reimbursements.create_comment(72, { content: 'Loren ipsun dollor' }) }
+
+        it "create a comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(678)
+        end
+      end
     end
 
     describe '#update_comment' do
+      context "with success" do
+        subject { client.reimbursements.update_comment(72, 678, { content: 'Foo bar' }) }
+
+        it "update comment" do
+          expect(subject.class).to eq(comment_klass)
+          expect(subject.id).to eq(678)
+          expect(subject.content).to eq('Foo bar')
+        end
+      end
     end
 
     describe '#destroy_comment' do
+      subject { client.reimbursements.destroy_comment(72, 678) }
+
+      it "destroy comment" do
+        expect(subject).to be_truthy
+      end
     end
   end
 

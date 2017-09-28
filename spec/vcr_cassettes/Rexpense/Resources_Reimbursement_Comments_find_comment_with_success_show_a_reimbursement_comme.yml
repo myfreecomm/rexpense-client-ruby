@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/reimbursements/11/comments/287
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 28 Sep 2017 12:51:50 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"37439ecf43283971c59a6f8d3ad62f90"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6e711217-66bc-4d5c-a182-cf16a28538c0
+      X-Runtime:
+      - '0.081288'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6Mjg3LCJjcmVhdGVkX2F0IjoiMjAxNS0wOC0zMVQxODo1MzozOVoi
+        LCJ1cGRhdGVkX2F0IjoiMjAxNS0wOC0zMVQxODo1NDowMVoiLCJkZWxldGVk
+        X2F0IjpudWxsLCJ1c2VyIjp7ImlkIjozNSwiZmlyc3RfbmFtZSI6Ikxlb25h
+        cmRvIiwibGFzdF9uYW1lIjoiQmFycm9zIiwibWVudGlvbl9uYW1lIjoiTGVv
+        bmFyZG9CYXJyb3MiLCJkZWZhdWx0X2N1cnJlbmN5IjoiQlJMIiwiZW1haWxz
+        IjpbeyJlbWFpbCI6Imxlb25hcmRvLmJhcnJvc0BteWZyZWVjb21tLmNvbS5i
+        ciIsIm1haW4iOnRydWV9XSwiYXZhdGFyIjpbeyJzdHlsZSI6Im9yaWdpbmFs
+        IiwidXJsIjoiaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNh
+        bmRib3gtdXBsb2Fkcy91c2VyX3BpY3R1cmVzLzI3LzU4MWFmNTEwZTcyOThj
+        YjQzZTc4NzdkMTk1NWNhMDQ2ZGE5NDk1ZTEvb3JpZ2luYWwvYXZhdGFyLmpw
+        ZyIsIndpZHRoIjo4NDAsImhlaWdodCI6ODQwLCJleHBpcmF0aW9uIjoiMjAx
+        Ny0wOS0yOFQxMzo1MTo1MFoifSx7InN0eWxlIjoibWVkaXVtIiwidXJsIjoi
+        aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL3JleHBlbnNlLXNhbmRib3gtdXBs
+        b2Fkcy91c2VyX3BpY3R1cmVzLzI3LzhkY2MzNThkYzgyMTk1YmJjZGMxMGVi
+        NDg1ZDczN2RmZjNjM2JhMWUvbWVkaXVtL2F2YXRhci5qcGciLCJ3aWR0aCI6
+        MzAwLCJoZWlnaHQiOjMwMCwiZXhwaXJhdGlvbiI6IjIwMTctMDktMjhUMTM6
+        NTE6NTBaIn0seyJzdHlsZSI6InRodW1iIiwidXJsIjoiaHR0cHM6Ly9zMy5h
+        bWF6b25hd3MuY29tL3JleHBlbnNlLXNhbmRib3gtdXBsb2Fkcy91c2VyX3Bp
+        Y3R1cmVzLzI3LzQzNmE4Y2U2MGIxNjRjZGI1YmRmODBiMzQzMDljMTRlOTc4
+        ZGUwMGQvdGh1bWIvYXZhdGFyLmpwZyIsIndpZHRoIjoxMDAsImhlaWdodCI6
+        MTAwLCJleHBpcmF0aW9uIjoiMjAxNy0wOS0yOFQxMzo1MTo1MFoifSx7InN0
+        eWxlIjoidGlueSIsInVybCI6Imh0dHBzOi8vczMuYW1hem9uYXdzLmNvbS9y
+        ZXhwZW5zZS1zYW5kYm94LXVwbG9hZHMvdXNlcl9waWN0dXJlcy8yNy84ZDY3
+        NzA2ZjRiNTI3ZjU0ZDI1YmYyOWU1MjY3N2RlMjAzNzMyN2E1L3RpbnkvYXZh
+        dGFyLmpwZyIsIndpZHRoIjo0OCwiaGVpZ2h0Ijo0OCwiZXhwaXJhdGlvbiI6
+        IjIwMTctMDktMjhUMTM6NTE6NTBaIn1dLCJkZWZhdWx0X2F2YXRhciI6ZmFs
+        c2V9LCJtZW50aW9uZWRfdXNlcnMiOltdLCJjb250ZW50Ijoib3V0cm8gY29t
+        ZW50w6FyaW8gKGVkaXRhbmRvKSIsImNvbnRlbnRfaHRtbCI6Im91dHJvIGNv
+        bWVudMOhcmlvIChlZGl0YW5kbykiLCJfbGlua3MiOlt7InJlbCI6InNlbGYi
+        LCJtZXRob2QiOiJHRVQiLCJocmVmIjoiaHR0cHM6Ly9zYW5kYm94LnJleHBl
+        bnNlLmNvbS9hcGkvdjEvcmVpbWJ1cnNlbWVudHMvMTEvY29tbWVudHMvMjg3
+        In0seyJyZWwiOiJ1cGRhdGUiLCJtZXRob2QiOiJQVVQiLCJocmVmIjoiaHR0
+        cHM6Ly9zYW5kYm94LnJleHBlbnNlLmNvbS9hcGkvdjEvcmVpbWJ1cnNlbWVu
+        dHMvMTEvY29tbWVudHMvMjg3In0seyJyZWwiOiJkZXN0cm95IiwibWV0aG9k
+        IjoiREVMRVRFIiwiaHJlZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5j
+        b20vYXBpL3YxL3JlaW1idXJzZW1lbnRzLzExL2NvbW1lbnRzLzI4NyJ9XX0=
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/reimbursements/11/comments/287
+  recorded_at: Thu, 28 Sep 2017 12:56:56 GMT
+recorded_with: VCR 2.9.3
