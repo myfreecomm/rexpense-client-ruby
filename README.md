@@ -33,7 +33,7 @@ Use `Rexpense.configure` to setup your environment:
 require 'rexpense'
 
 Rexpense.configure do |config|
-  config.api_mode = 'production' # To set the rexpense application that will use
+  config.url = 'https://app.rexpense.com' # URL of the Rexpense
   config.version = 'v1' # Current API version
   config.user_agent = 'My App v1.0' # optional, but you should pass a custom user-agent identifying your app
 end

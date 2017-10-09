@@ -2,10 +2,10 @@ require "base64"
 
 module Rexpense
   class Configuration
-    attr_accessor :user_agent, :api_mode, :version
+    attr_accessor :user_agent, :url, :version
 
     def initialize
-      @api_mode = 'production'
+      @url = 'https://app.rexpense.com'
       @version = 'v1'
       @user_agent = "Rexpense Ruby Client v#{Rexpense::VERSION}"
     end

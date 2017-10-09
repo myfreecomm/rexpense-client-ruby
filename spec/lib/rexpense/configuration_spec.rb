@@ -4,8 +4,8 @@ require 'spec_helper'
 describe Rexpense::Configuration do
   subject { Rexpense::Configuration.new }
 
-  it "uses the production mode by default" do
-    expect(subject.api_mode).to eq("production")
+  it "uses the production url by default" do
+    expect(subject.url).to eq("https://app.rexpense.com")
   end
 
   it "uses a default user agent" do
@@ -13,10 +13,10 @@ describe Rexpense::Configuration do
   end
 
   it 'allows setting the configuration parameters' do
-    subject.api_mode = "sandbox"
+    subject.url = "http://localhost:3000"
     subject.user_agent = "My specific user agent"
 
-    expect(subject.api_mode).to eq("sandbox")
+    expect(subject.url).to eq("http://localhost:3000")
     expect(subject.user_agent).to eq("My specific user agent")
   end
 
