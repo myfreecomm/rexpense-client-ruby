@@ -10,7 +10,7 @@ module Rexpense
 
     def initialize(token)
       @token = token
-      @base_url = api_url + "/#{Rexpense.configuration.version}"
+      @base_url = api_url + "/api/#{Rexpense.configuration.version}"
     end
 
     %w[get post delete put patch].each do |m|
@@ -22,8 +22,7 @@ module Rexpense
     private
 
     def api_url
-      return PRODUCTION_URL if Rexpense.configuration.api_mode == 'production'
-      SANDBOX_URL
+      Rexpense.configuration.url
     end
 
     def send_request(method, path, options, &block)

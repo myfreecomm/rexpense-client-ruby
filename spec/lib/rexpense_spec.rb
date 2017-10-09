@@ -9,12 +9,12 @@ describe Rexpense do
     it "should be done via block initialization" do
       Rexpense.configure do |c|
         c.user_agent = "My App v1.0"
-        c.api_mode = "sandbox"
+        c.url = "https://sandbox.rexpense.com"
         c.version = 'v1'
       end
 
       expect(Rexpense.configuration.user_agent).to eq("My App v1.0")
-      expect(Rexpense.configuration.api_mode).to eq("sandbox")
+      expect(Rexpense.configuration.url).to eq("https://sandbox.rexpense.com")
       expect(Rexpense.configuration.version).to eq("v1")
     end
 
