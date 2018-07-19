@@ -4,7 +4,7 @@ A Ruby client for the [Rexpense](http://www.rexpense.com) REST API
 
 [![Gem version](https://badge.fury.io/rb/rexpense.png)](https://rubygems.org/gems/rexpense)
 [![Build status](https://travis-ci.org/myfreecomm/rexpense-client-ruby.png?branch=master)](https://travis-ci.org/myfreecomm/rexpense-client-ruby)
-[![Test coverage](https://codeclimate.com/github/myfreecomm/rexpense-client-ruby/badges/coverage.svg)](https://codeclimate.com/github/myfreecomm/v-client-ruby)
+[![Test coverage](https://codeclimate.com/github/myfreecomm/rexpense-client-ruby/badges/coverage.svg)](https://codeclimate.com/github/myfreecomm/rexpense-client-ruby)
 [![Code Climate grade](https://codeclimate.com/github/myfreecomm/rexpense-client-ruby.png)](https://codeclimate.com/github/myfreecomm/rexpense-client-ruby)
 
 Rexpense API docs: http://developers.rexpense.com
