@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v1.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 27 Sep 2017 20:08:32 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"b752b458a4b46e22465b9f2d938c5962"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1140a41d-8b94-4a5e-9788-db92e402406c
+      X-Runtime:
+      - '0.029787'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"id":64,"name":"updated tag","_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35/tags/64"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/64
+  recorded_at: Wed, 27 Sep 2017 20:13:35 GMT
+recorded_with: VCR 2.9.3
