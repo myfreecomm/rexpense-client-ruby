@@ -126,7 +126,25 @@ describe Rexpense::Resources::Organization, vcr: true do
 
       it 'find a membership in organization' do
         expect(subject.class).to eq(Rexpense::Entities::Membership)
-        expect(subject.user.id).to eq(64)
+      end
+
+      it 'sets user informations correctly' do
+        expect(subject.user.attributes).to eq({
+          avatar: [{"style"=>"original", "url"=>"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/f3a7eab501d4296ab7573788495933148d753e7e/original/DM-980-147802948420161101-3-81b6ab.png", "width"=>nil, "height"=>nil, "expiration"=>nil}, {"style"=>"medium", "url"=>"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/238b1f41ebdf10c2aeacfa92aea857209c823357/medium/DM-980-147802948420161101-3-81b6ab.png", "width"=>nil, "height"=>nil, "expiration"=>nil}, {"style"=>"thumb", "url"=>"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/c62a31737b9e2f0d0c2f14cc5449232bcfc0bd95/thumb/DM-980-147802948420161101-3-81b6ab.png", "width"=>nil, "height"=>nil, "expiration"=>nil}, {"style"=>"tiny", "url"=>"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/0dc1c022cde836cf4ed00692028dc49fba56641f/tiny/DM-980-147802948420161101-3-81b6ab.png", "width"=>nil, "height"=>nil, "expiration"=>nil}],
+          default_avatar: true, default_currency: 'BRL',
+          email: 'dante.miranda@nexaas.com',
+          emails: [
+            { "email" => "dante.alighierimds@gmail.com", "main" => false },
+            { "email" => "dante.miranda@myfreecomm.com.br", "main" => false },
+            { "email" => "dante.miranda+int@nexaas.com", "main" => false },
+            { "email" => "dante.miranda+test@nexaas.com", "main" => false },
+            { "email" => "dante.alg@live.com", "main" => false },
+            { "email" => "dante.miranda@nexaas.com", "main" => true }
+          ],
+          first_name: 'Dante',
+          id: 64, last_name: 'Miranda', mention_name: 'DanteMiranda',
+          name: nil
+        })
       end
     end
 

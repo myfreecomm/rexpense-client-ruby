@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/members/64
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v2.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 19 Jul 2018 19:17:44 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"73dff8746dc7a12b6b06cb18e5462674"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e4d3203d-5589-4def-8246-e0ba12d3906a
+      X-Runtime:
+      - '0.056685'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"role":"admin","user":{"id":64,"first_name":"Dante","last_name":"Miranda","mention_name":"DanteMiranda","default_currency":"BRL","emails":[{"email":"dante.alighierimds@gmail.com","main":false},{"email":"dante.miranda@myfreecomm.com.br","main":false},{"email":"dante.miranda+int@nexaas.com","main":false},{"email":"dante.miranda+test@nexaas.com","main":false},{"email":"dante.alg@live.com","main":false},{"email":"dante.miranda@nexaas.com","main":true}],"avatar":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/f3a7eab501d4296ab7573788495933148d753e7e/original/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/238b1f41ebdf10c2aeacfa92aea857209c823357/medium/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/c62a31737b9e2f0d0c2f14cc5449232bcfc0bd95/thumb/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/users/64/0dc1c022cde836cf4ed00692028dc49fba56641f/tiny/DM-980-147802948420161101-3-81b6ab.png","width":null,"height":null,"expiration":null}],"default_avatar":true},"organization":{"id":35,"name":"A
+        Song of Ice and Fire","created_at":"2015-02-06T13:54:25Z","updated_at":"2018-05-17T21:02:41Z","members_count":18,"restricted_tags":true,"expired":false,"identifier_document":"125896666","logo":[{"style":"original","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/c18fb1d1002527123663dec53a011fd9adb9ff81/original/Folder.jpg","width":200,"height":200,"expiration":"2018-07-19T20:17:44Z"},{"style":"medium","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/0d535bf31ea6ec695dd133eab68d2ff13912dbd5/medium/Folder.jpg","width":200,"height":200,"expiration":"2018-07-19T20:17:44Z"},{"style":"thumb","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/04ba60a0822462c2b795a9ddea366759197d25f7/thumb/Folder.jpg","width":100,"height":100,"expiration":"2018-07-19T20:17:44Z"},{"style":"tiny","url":"https://s3.amazonaws.com/rexpense-sandbox-uploads/organization_pictures/16/cf6456d41bf35493ec7d4dd9b4928d7369754542/tiny/Folder.jpg","width":48,"height":48,"expiration":"2018-07-19T20:17:44Z"}],"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35"},{"rel":"partial_update","method":"PATCH","href":"https://sandbox.rexpense.com/api/v1/organizations/35"}]},"_links":[{"rel":"self","method":"GET","href":"https://sandbox.rexpense.com/api/v1/organizations/35/members/64"},{"rel":"update","method":"PUT","href":"https://sandbox.rexpense.com/api/v1/organizations/35/members/64"},{"rel":"destroy","method":"DELETE","href":"https://sandbox.rexpense.com/api/v1/organizations/35/members/64"}]}'
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/members/64
+  recorded_at: Thu, 19 Jul 2018 19:17:44 GMT
+recorded_with: VCR 2.9.3

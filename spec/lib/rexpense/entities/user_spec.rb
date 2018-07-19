@@ -5,6 +5,7 @@ describe Rexpense::Entities::User do
 
   it_behaves_like "entity_attributes", [
     :id, :first_name, :last_name, :mention_name,
-    :default_currency, :name, :avatar, :default_avatar
+    :default_currency, :name, :avatar, :default_avatar,
+    :email, :emails
   ]
 end
