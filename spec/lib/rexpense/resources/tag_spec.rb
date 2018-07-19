@@ -25,9 +25,26 @@ describe Rexpense::Resources::Tag, vcr: true do
   describe '#find' do
     subject { client.tags.find(35, 64) }
 
-    it "returns a category successfully" do
+    it "returns a tag object" do
       expect(subject.class).to eq(tag_klass)
-      expect(subject.id).to eq(64)
+    end
+
+    it "returns a tag with correct data" do
+      expect(subject.attributes).to eq({
+        name: "updated tag",
+        id: 64, group: nil
+      })
+    end
+
+    context 'when a tag has group' do
+      subject { client.tags.find(35, 77) }
+
+      it 'returns tag with group field filled' do
+        expect(subject.attributes).to eq({
+          id: 77, name: 'ônibus',
+          group: 'transporte'
+        })
+      end
     end
   end
 

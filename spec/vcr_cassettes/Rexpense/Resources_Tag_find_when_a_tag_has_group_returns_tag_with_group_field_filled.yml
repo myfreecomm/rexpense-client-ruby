@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://sandbox.rexpense.com/api/v1/organizations/35/tags/77
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Rexpense Ruby Client v2.0.0
+      Accept:
+      - application/json
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic OGNkMDQ5YjRhZmNhOTIxM2ZiMjQ1NTUyODM5NGFiMmZiMGJjMzRmNWM5MDVmMzNjOlg=
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 19 Jul 2018 19:04:31 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"c05fc2334c615c6aef190ef76f95c7cf"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dbeeb8ec-4710-4dda-9a27-0f778f5c7a01
+      X-Runtime:
+      - '0.025748'
+      Strict-Transport-Security:
+      - max-age=631152000; includeSubdomains
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6NzcsIm5hbWUiOiLDtG5pYnVzIiwiZ3JvdXAiOiJ0cmFuc3BvcnRlIiwiX2xpbmtzIjpbeyJyZWwiOiJzZWxmIiwibWV0aG9kIjoiR0VUIiwiaHJlZiI6Imh0dHBzOi8vc2FuZGJveC5yZXhwZW5zZS5jb20vYXBpL3YxL29yZ2FuaXphdGlvbnMvMzUvdGFncy83NyJ9LHsicmVsIjoiZGVzdHJveSIsIm1ldGhvZCI6IkRFTEVURSIsImhyZWYiOiJodHRwczovL3NhbmRib3gucmV4cGVuc2UuY29tL2FwaS92MS9vcmdhbml6YXRpb25zLzM1L3RhZ3MvNzcifSx7InJlbCI6InVwZGF0ZSIsIm1ldGhvZCI6IlBVVCIsImhyZWYiOiJodHRwczovL3NhbmRib3gucmV4cGVuc2UuY29tL2FwaS92MS9vcmdhbml6YXRpb25zLzM1L3RhZ3MvNzcifV19
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: https://sandbox.rexpense.com/api/v1/organizations/35/tags/77
+  recorded_at: Thu, 19 Jul 2018 19:04:32 GMT
+recorded_with: VCR 2.9.3
