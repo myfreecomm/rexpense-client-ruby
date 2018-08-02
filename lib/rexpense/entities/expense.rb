@@ -15,6 +15,7 @@ module Rexpense
       attribute :payer, Rexpense::Entities::Organization
       attribute :receiver, Rexpense::Entities::User
       attribute :liquidate_through_advancement, Boolean
+      attribute :occurred_at, DateTime
       attribute :created_at, DateTime
       attribute :updated_at, DateTime
     end
