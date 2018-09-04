@@ -9,6 +9,6 @@ describe Rexpense::Entities::Expense do
     :distance_kind, :destination, :origin, :amount, :approved_amount, :latitude,
     :longitude, :distance, :destination_latitude, :destination_longitude,
     :origin_longitude, :origin_latitude, :tags, :liquidate_through_advancement,
-    :created_at, :updated_at, :pre_expense_id, :payer, :receiver
+    :created_at, :updated_at, :pre_expense_id, :payer, :receiver, :occurred_at
   ]
 end
